@@ -14,6 +14,8 @@ import {
 import { BARE_ACTS_DATABASE, BareAct } from '../data/bareActsData';
 import { SEOHead } from '../components/SEOHead';
 import { BareActsBulkArchiveUploader } from '../components/BareActsBulkArchiveUploader';
+import { CrossBorderLegalComparator } from '../components/CrossBorderLegalComparator';
+import { LegalMaximsDirectory } from '../components/LegalMaximsDirectory';
 
 export const BareActsPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -416,6 +418,45 @@ export const BareActsPage: React.FC = () => {
             </div>
           ))}
         </div>
+
+        {/* Global Comparative Law & Jurisprudential Doctrines Section */}
+        <div className="pt-12 border-t border-slate-200 space-y-12">
+          {/* 1. Cross-Border Comparative Law Engine */}
+          <div className="space-y-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <span className="text-[11px] font-bold text-amber-600 uppercase tracking-wider">
+                  International Legal Analysis
+                </span>
+                <h2 className="text-xl sm:text-2xl font-serif font-bold text-slate-900">
+                  Cross-Border Comparative Law Engine
+                </h2>
+              </div>
+              <Link 
+                to="/legal-drafts"
+                className="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"
+              >
+                <span>Contract & Clause Templates</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+            <CrossBorderLegalComparator />
+          </div>
+
+          {/* 2. Latin Legal Maxims & Foundational Principles */}
+          <div className="space-y-4">
+            <div>
+              <span className="text-[11px] font-bold text-amber-600 uppercase tracking-wider">
+                Classical Jurisprudence & Judicial Doctrines
+              </span>
+              <h2 className="text-xl sm:text-2xl font-serif font-bold text-slate-900">
+                Directory of Fundamental Latin Legal Maxims
+              </h2>
+            </div>
+            <LegalMaximsDirectory />
+          </div>
+        </div>
+
       </div>
     </>
   );

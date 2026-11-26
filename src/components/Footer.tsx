@@ -117,6 +117,18 @@ export const Footer: React.FC<FooterProps> = ({ onOpenFreeConsultation }) => {
                 </Link>
               </li>
               <li>
+                <Link to="/bare-acts" className="hover:text-amber-300 transition-colors flex items-center gap-1.5">
+                  <ChevronRight className="w-3 h-3 text-amber-400" />
+                  <span>Global & Indian Bare Acts (132 Books)</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/legal-drafts" className="hover:text-amber-300 transition-colors flex items-center gap-1.5 font-bold text-amber-300">
+                  <ChevronRight className="w-3 h-3 text-amber-400" />
+                  <span>Interactive Legal Drafting Hub</span>
+                </Link>
+              </li>
+              <li>
                 <Link to="/constitutional-law" className="hover:text-amber-300 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3 h-3 text-emerald-500" />
                   <span>Constitutional & Writs</span>

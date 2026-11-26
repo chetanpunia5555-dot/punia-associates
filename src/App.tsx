@@ -48,6 +48,7 @@ import { CaseBriefsPage } from './pages/CaseBriefsPage';
 import { JudiciaryPrepPage } from './pages/JudiciaryPrepPage';
 import { CurrentAffairsPage } from './pages/CurrentAffairsPage';
 import { LegalMagazinePage } from './pages/LegalMagazinePage';
+import { LegalDraftingHubPage } from './pages/LegalDraftingHubPage';
 
 export default function App() {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
@@ -239,7 +240,9 @@ export default function App() {
             <Route path="/legal-books" element={<LegalResourcesPage />} />
             <Route path="/legal-pdfs" element={<LegalResourcesPage />} />
             <Route path="/notifications-circulars" element={<LegislativeUpdatesPage />} />
-            <Route path="/legal-forms" element={<LegalResourcesPage />} />
+            <Route path="/legal-forms" element={<LegalDraftingHubPage />} />
+            <Route path="/legal-drafts" element={<LegalDraftingHubPage />} />
+            <Route path="/contract-templates" element={<LegalDraftingHubPage />} />
 
             {/* 25. Frequently Asked Questions */}
             <Route path="/faq" element={<FaqPage />} />

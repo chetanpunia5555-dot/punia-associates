@@ -141,7 +141,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <div className="absolute left-0 top-full hidden group-hover:block w-56 bg-slate-900 border border-slate-700 rounded-xl p-2 shadow-2xl space-y-1 text-xs z-50">
                   <Link to="/legal-library" className="block px-3 py-2 text-amber-400 font-bold hover:bg-slate-800 rounded-lg">Legal Library Home</Link>
                   <Link to="/magazine" className="block px-3 py-2 text-amber-300 font-semibold hover:bg-slate-800 rounded-lg">SC & HC Law Reporter</Link>
-                  <Link to="/bare-acts" className="block px-3 py-2 text-slate-300 hover:text-amber-300 hover:bg-slate-800 rounded-lg">Bare Acts</Link>
+                  <Link to="/bare-acts" className="block px-3 py-2 text-slate-300 hover:text-amber-300 hover:bg-slate-800 rounded-lg">Global & Indian Bare Acts</Link>
+                  <Link to="/legal-drafts" className="block px-3 py-2 text-amber-400 font-bold hover:bg-slate-800 rounded-lg">Legal Drafting Hub & Templates</Link>
                   <Link to="/central-acts" className="block px-3 py-2 text-slate-300 hover:text-amber-300 hover:bg-slate-800 rounded-lg">Central Laws</Link>
                   <Link to="/state-acts" className="block px-3 py-2 text-slate-300 hover:text-amber-300 hover:bg-slate-800 rounded-lg">State Laws</Link>
                   <Link to="/rules-regulations" className="block px-3 py-2 text-slate-300 hover:text-amber-300 hover:bg-slate-800 rounded-lg">Rules & Regulations</Link>
@@ -313,7 +314,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <div className="pl-9 pr-3 py-2.5 space-y-2.5 text-xs text-slate-700 bg-slate-50 rounded-xl my-1">
                       <Link to="/bare-acts" className="flex items-center gap-2 hover:text-amber-800">
                         <span className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
-                        <span>Bare Acts</span>
+                        <span>Global & Indian Bare Acts</span>
+                      </Link>
+                      <Link to="/legal-drafts" className="flex items-center gap-2 hover:text-amber-800 font-bold text-amber-900">
+                        <span className="w-1.5 h-1.5 rounded-full bg-amber-600 shrink-0" />
+                        <span>Legal Drafting Hub & Templates</span>
                       </Link>
                       <Link to="/rules-regulations" className="flex items-center gap-2 hover:text-amber-800">
                         <span className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />

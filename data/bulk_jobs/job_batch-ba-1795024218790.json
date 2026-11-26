@@ -1,0 +1,43 @@
+{
+  "jobId": "batch-ba-1795024218790",
+  "jobName": "Disaster_Management_Act_Full_Preservation.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "Disaster_Management_Act_Full_Preservation.pdf",
+  "archiveSizeBytes": 329,
+  "createdAt": "18 Nov 2026, 11:20 pm",
+  "updatedAt": "18 Nov 2026, 11:20 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 1,
+  "totalArchiveSizeBytes": 329,
+  "items": [
+    {
+      "id": "item-1795024217912-v3sbb",
+      "originalFileName": "Disaster_Management_Act_Full_Preservation.pdf",
+      "storedPdfUrl": "/bare-acts/stored/disaster_management_act_full_preservation_1bff209c.pdf",
+      "fileSizeBytes": 329,
+      "checksumSha256": "1bff209c623bc76c64b040e2eaa07704dffb097f4bb7933c95600498edd0e290",
+      "pageCount": 1,
+      "extractedTextExcerpt": "-- 1 of 1 --",
+      "detectedTitle": "Disaster Management Act Full Preservation",
+      "actNumber": "Act of Parliament (2024)",
+      "year": 2024,
+      "jurisdiction": "Central",
+      "category": "Special & Local Laws",
+      "preamble": "An Act to consolidate, amend, and give effect to statutory provisions regarding Disaster Management Act Full Preservation.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (1 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 93
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 11:20 pm] Chunked upload & PDF optimization finalized for \"Disaster_Management_Act_Full_Preservation.pdf\" (1 pages)."
+  ]
+}

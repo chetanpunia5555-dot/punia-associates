@@ -1,0 +1,43 @@
+{
+  "jobId": "batch-ba-1795019139041",
+  "jobName": "The_Environment_Protection_Act_1986_Punia_Associates_Reader_Edition.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "The_Environment_Protection_Act_1986_Punia_Associates_Reader_Edition.pdf",
+  "archiveSizeBytes": 81027,
+  "createdAt": "18 Nov 2026, 9:55 pm",
+  "updatedAt": "18 Nov 2026, 9:55 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 10,
+  "totalArchiveSizeBytes": 81027,
+  "items": [
+    {
+      "id": "item-1795019138971-li8q0",
+      "originalFileName": "The_Environment_Protection_Act_1986_Punia_Associates_Reader_Edition.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_environment_protection_act_1986_punia_associ_54499703.pdf",
+      "fileSizeBytes": 81027,
+      "checksumSha256": "544997034a9e7ff4d84808d871c2171ea4926ec0e9c63eb463458db444b06192",
+      "pageCount": 10,
+      "extractedTextExcerpt": "PUNIA ASSOCIATES • PRIVATE READER COPY 1 PUNIA ASSOCIATES INDIAN LEGAL READER SERIES STATUTORY TEXT The Environment (Protection) Act, 1986 Central environmental legislation MODERN PROFESSIONAL READER EDITION A carefully typeset private reader copy prepared for legal study and reference. SOURCE AND USE NOTE This edition is based on the PDF supplied for formatting. Typography, spacing, hierarchy and pagination have been redesigned; the statutory wording has not intentionally been amended. This is a private reader edition, not an official Government publication, certified copy, legal opinion or assurance that all later amendments and commencement notifications are incorporated. Before relying on any provision, verify the latest applicable text and notifications from the official Gazette and India Code. Source file: THE ENVIRONMENT (PROTECTION) ACT, 1986 (1).pdf Source PDF pages: 9 Reader edition prepared: 14 November 2026 PUNIA ASSOCIATES • LEGAL RESEARCH LIBRARY -- 1 of 10 -- PUNIA ASSOCIATES | LEGAL READER EDITION The Environment (Protection) Act, 1986 PUNIA ASSOCIATES • PRIVATE READER COPY 2 ARRANGEMENT OF SECTIONS CHAPTER I PRELIMINARY SECTIONS 1. Short title, extent and commencement. 2. Definitions. CHAPTER II GENERAL POWERS OF THE CENTRAL GOVERNMENT 3. Power of Central Government to take measures to protect and improve environment. 4. Appointment of officers and their powers and functions. 5. Power to give directions. 6. Rules to regulate environmental pollution. CHAPTER",
+      "detectedTitle": "The Environment Protection Act 1986 Punia Associates Reader Edition",
+      "actNumber": "Act of Parliament (1986)",
+      "year": 1986,
+      "jurisdiction": "Central",
+      "category": "Special & Local Laws",
+      "preamble": "An Act to provide for the protection and improvement of environment and for matters connected therewith.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (10 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 93
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 9:55 pm] Chunked upload & PDF optimization finalized for \"The_Environment_Protection_Act_1986_Punia_Associates_Reader_Edition.pdf\" (10 pages)."
+  ]
+}

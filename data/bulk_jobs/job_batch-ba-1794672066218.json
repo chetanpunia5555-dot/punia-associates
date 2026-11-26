@@ -1,0 +1,45 @@
+{
+  "jobId": "batch-ba-1794672066218",
+  "jobName": "test_arbitrary_field.zip",
+  "batchType": "ZIP_ARCHIVE",
+  "archiveFileName": "test_arbitrary_field.zip",
+  "archiveSizeBytes": 422,
+  "createdAt": "14 Nov 2026, 9:31 pm",
+  "updatedAt": "14 Nov 2026, 9:31 pm",
+  "status": "PREVIEW_READY",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 1,
+  "totalArchiveSizeBytes": 422,
+  "items": [
+    {
+      "id": "item-1794672066232-549aj",
+      "originalFileName": "arbitration_act_1996.pdf",
+      "storedPdfUrl": "/bare-acts/stored/arbitration_act_1996_66f1f433.pdf",
+      "fileSizeBytes": 487,
+      "checksumSha256": "66f1f433412949d36f4a9870d28e2337a282f15e2f7b1a2a451c9b12919c5f4d",
+      "pageCount": 1,
+      "extractedTextExcerpt": "THE ARBITRATION ACT 1996 -- 1 of 1 --",
+      "detectedTitle": "THE ARBITRATION ACT 1996",
+      "actNumber": "Act of Legislature (1996)",
+      "year": 1996,
+      "jurisdiction": "Central",
+      "category": "Commercial & Corporate",
+      "preamble": "An Act to consolidate, amend, and give effect to statutory provisions regarding THE ARBITRATION ACT 1996.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document. Metadata extracted successfully.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 92
+    }
+  ],
+  "logs": [
+    "[14 Nov 2026, 9:31 pm] Received ZIP archive \"test_arbitrary_field.zip\" (0 KB).",
+    "Discovered 1 entries inside ZIP archive.",
+    "Processed \"arbitration_act_1996.pdf\" -> Status: VALID (Act: THE ARBITRATION ACT 1996)"
+  ]
+}

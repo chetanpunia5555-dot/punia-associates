@@ -1,0 +1,43 @@
+{
+  "jobId": "batch-ba-1795019137696",
+  "jobName": "The_Employees_Provident_Funds_and_Miscellaneous_Provisions_Act_1952_Punia_Associates_Reader_Edition.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "The_Employees_Provident_Funds_and_Miscellaneous_Provisions_Act_1952_Punia_Associates_Reader_Edition.pdf",
+  "archiveSizeBytes": 168593,
+  "createdAt": "18 Nov 2026, 9:55 pm",
+  "updatedAt": "18 Nov 2026, 9:55 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 41,
+  "totalArchiveSizeBytes": 168593,
+  "items": [
+    {
+      "id": "item-1795019137624-nnaf9",
+      "originalFileName": "The_Employees_Provident_Funds_and_Miscellaneous_Provisions_Act_1952_Punia_Associates_Reader_Edition.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_employees_provident_funds_and_miscellaneous__3aedc88f.pdf",
+      "fileSizeBytes": 168593,
+      "checksumSha256": "3aedc88f2f1da0a90d1c314e2d7b30b651a0dd3c85b0fff454228e03be7f7109",
+      "pageCount": 41,
+      "extractedTextExcerpt": "PUNIA ASSOCIATES • PRIVATE READER COPY 1 PUNIA ASSOCIATES INDIAN LEGAL READER SERIES STATUTORY TEXT The Employees' Provident Funds and Miscellaneous Provisions Act, 1952 ACT NO. 19 OF 1952 Historical / superseded labour legislation MODERN PROFESSIONAL READER EDITION A carefully typeset private reader copy prepared for legal study and reference. LEGAL STATUS / VERSION ALERT The Code on Social Security, 2020 provides for repeal of this Act. The relevant repeal provisions took effect on 21 November 2025, subject to savings and transitional provisions. Retained here for historical/reference use; not a standalone current statute. SOURCE AND USE NOTE This edition is based on the PDF supplied for formatting. Typography, spacing, hierarchy and pagination have been redesigned; the statutory wording has not intentionally been amended. This is a private reader edition, not an official Government publication, certified copy, legal opinion or assurance that all later amendments and commencement notifications are incorporated. Before relying on any provision, verify the latest applicable text and notifications from the official Gazette and India Code. Source file: THE_EMPLOYEES'_PROVIDENT_FUNDS_AND_MISCELLANEOUS_PROVISIONS_ACT.pdf Source PDF pages: 42 Reader edition prepared: 14 November 2026 PUNIA ASSOCIATES • LEGAL RESEARCH LIBRARY -- 1 of 41 -- PUNIA ASSOCIATES | LEGAL READER EDITION The Employees' Provident Funds and Miscellaneous Provi PUNIA ASSOCIATES • PRIVATE READER COPY 2 ARRANG",
+      "detectedTitle": "The Employees Provident Funds and Miscellaneous Provisions Act 1952 Punia Associates Reader Edition",
+      "actNumber": "Act No. 19 of 1952",
+      "year": 1952,
+      "jurisdiction": "Central",
+      "category": "Labour & Service",
+      "preamble": "An Act to consolidate, amend, and give effect to statutory provisions regarding The Employees Provident Funds and Miscellaneous Provisions Act 1952 Punia Associates Reader Edition.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (41 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 93
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 9:55 pm] Chunked upload & PDF optimization finalized for \"The_Employees_Provident_Funds_and_Miscellaneous_Provisions_Act_1952_Punia_Associates_Reader_Edition.pdf\" (41 pages)."
+  ]
+}

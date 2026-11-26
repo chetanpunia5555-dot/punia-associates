@@ -1,0 +1,43 @@
+{
+  "jobId": "batch-ba-1795019134994",
+  "jobName": "The_Foreign_Exchange_Management_Act_1999_Punia_Associates_Reader_Edition.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "The_Foreign_Exchange_Management_Act_1999_Punia_Associates_Reader_Edition.pdf",
+  "archiveSizeBytes": 115159,
+  "createdAt": "18 Nov 2026, 9:55 pm",
+  "updatedAt": "18 Nov 2026, 9:55 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 21,
+  "totalArchiveSizeBytes": 115159,
+  "items": [
+    {
+      "id": "item-1795019134892-t67tk",
+      "originalFileName": "The_Foreign_Exchange_Management_Act_1999_Punia_Associates_Reader_Edition.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_foreign_exchange_management_act_1999_punia_a_83248740.pdf",
+      "fileSizeBytes": 115159,
+      "checksumSha256": "832487402cd1dad808e0427307512c3922a02fb705ca6da612394d189a259934",
+      "pageCount": 21,
+      "extractedTextExcerpt": "PUNIA ASSOCIATES • PRIVATE READER COPY 1 PUNIA ASSOCIATES INDIAN LEGAL READER SERIES STATUTORY TEXT The Foreign Exchange Management Act, 1999 ACT NO. 42 OF 1999 Central financial legislation MODERN PROFESSIONAL READER EDITION A carefully typeset private reader copy prepared for legal study and reference. SOURCE AND USE NOTE This edition is based on the PDF supplied for formatting. Typography, spacing, hierarchy and pagination have been redesigned; the statutory wording has not intentionally been amended. This is a private reader edition, not an official Government publication, certified copy, legal opinion or assurance that all later amendments and commencement notifications are incorporated. Before relying on any provision, verify the latest applicable text and notifications from the official Gazette and India Code. Source file: THE FOREIGN EXCHANGE MANAGEMENT ACT, 1999 (1).pdf Source PDF pages: 20 Reader edition prepared: 14 November 2026 PUNIA ASSOCIATES • LEGAL RESEARCH LIBRARY -- 1 of 21 -- PUNIA ASSOCIATES | LEGAL READER EDITION The Foreign Exchange Management Act, 1999 PUNIA ASSOCIATES • PRIVATE READER COPY 2 ARRANGEMENT OF SECTIONS CHAPTER I PRELIMINARY SECTIONS 1. Short title, extent, application and commencement. 2. Definitions. CHAPTER II REGULATION AND MANAGEMENT OF FOREIGN EXCHANGE 3. Dealing in foreign exchange, etc. 4. Holding of foreign exchange, etc. 5. Current account transactions. 6. Capital account transactions. 7. Export of goods and services. 8. Realis",
+      "detectedTitle": "The Foreign Exchange Management Act 1999 Punia Associates Reader Edition",
+      "actNumber": "Act No. 42 of 1999",
+      "year": 1999,
+      "jurisdiction": "Central",
+      "category": "Special & Local Laws",
+      "preamble": "An Act to consolidate, amend, and give effect to statutory provisions regarding The Foreign Exchange Management Act 1999 Punia Associates Reader Edition.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (21 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 93
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 9:55 pm] Chunked upload & PDF optimization finalized for \"The_Foreign_Exchange_Management_Act_1999_Punia_Associates_Reader_Edition.pdf\" (21 pages)."
+  ]
+}

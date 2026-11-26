@@ -1,0 +1,43 @@
+{
+  "jobId": "batch-ba-1795019146055",
+  "jobName": "The_Gram_Nyayalayas_Act_2008_Punia_Associates_Reader_Edition.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "The_Gram_Nyayalayas_Act_2008_Punia_Associates_Reader_Edition.pdf",
+  "archiveSizeBytes": 88128,
+  "createdAt": "18 Nov 2026, 9:55 pm",
+  "updatedAt": "18 Nov 2026, 9:55 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 13,
+  "totalArchiveSizeBytes": 88128,
+  "items": [
+    {
+      "id": "item-1795019146000-en3i6",
+      "originalFileName": "The_Gram_Nyayalayas_Act_2008_Punia_Associates_Reader_Edition.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_gram_nyayalayas_act_2008_punia_associates_re_bf9094f4.pdf",
+      "fileSizeBytes": 88128,
+      "checksumSha256": "bf9094f49d379194bc28b368e92ba619ca39478061d6d4d01e9c67b14cf21b0a",
+      "pageCount": 13,
+      "extractedTextExcerpt": "PUNIA ASSOCIATES • PRIVATE READER COPY 1 PUNIA ASSOCIATES INDIAN LEGAL READER SERIES STATUTORY TEXT The Gram Nyayalayas Act, 2008 ACT NO. 4 OF 2009 Central legislation / access to justice MODERN PROFESSIONAL READER EDITION A carefully typeset private reader copy prepared for legal study and reference. SOURCE AND USE NOTE This edition is based on the PDF supplied for formatting. Typography, spacing, hierarchy and pagination have been redesigned; the statutory wording has not intentionally been amended. This is a private reader edition, not an official Government publication, certified copy, legal opinion or assurance that all later amendments and commencement notifications are incorporated. Before relying on any provision, verify the latest applicable text and notifications from the official Gazette and India Code. Source file: THE GRAM NYAYALAYAS ACT, 2008 (1).pdf Source PDF pages: 12 Reader edition prepared: 14 November 2026 PUNIA ASSOCIATES • LEGAL RESEARCH LIBRARY -- 1 of 13 -- PUNIA ASSOCIATES | LEGAL READER EDITION The Gram Nyayalayas Act, 2008 PUNIA ASSOCIATES • PRIVATE READER COPY 2 ARRANGEMENT OF SECTIONS CHAPTER I PRELIMINARY SECTIONS 1. Short title, extent and commencement. 2. Definitions. CHAPTER II 3. Establishment of Gram Nyayalayas. 4. Headquarters of Gram Nyayalayas. 5. Appointment of Nyayadhikari. 6. Qualifications for appointment of Nyayadhikari. 7. Salary, allowances and other terms and conditions of service of Nyayadhikari. 8. Nyayadhikari not to preside",
+      "detectedTitle": "The Gram Nyayalayas Act 2008 Punia Associates Reader Edition",
+      "actNumber": "Act No. 4 of 2009",
+      "year": 2008,
+      "jurisdiction": "Central",
+      "category": "Special & Local Laws",
+      "preamble": "An Act to consolidate, amend, and give effect to statutory provisions regarding The Gram Nyayalayas Act 2008 Punia Associates Reader Edition.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (13 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 93
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 9:55 pm] Chunked upload & PDF optimization finalized for \"The_Gram_Nyayalayas_Act_2008_Punia_Associates_Reader_Edition.pdf\" (13 pages)."
+  ]
+}

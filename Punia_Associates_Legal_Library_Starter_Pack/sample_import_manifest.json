@@ -1,0 +1,38 @@
+{
+  "package_name": "Punia Associates Legal Library Import",
+  "package_version": "1.0.0",
+  "created_for": "puniaassociates.site",
+  "coverage_requested": {
+    "central_acts": true,
+    "states": 28,
+    "union_territories": 8,
+    "subordinate_legislation": true,
+    "judgments_index": true
+  },
+  "source_priority": [
+    "https://www.indiacode.nic.in/",
+    "https://egazette.gov.in/",
+    "https://www.sci.gov.in/",
+    "https://judgments.ecourts.gov.in/",
+    "https://hcservices.ecourts.gov.in/hcservices/"
+  ],
+  "import_policy": {
+    "default_publication_status": "PENDING_REVIEW",
+    "require_official_source_url": true,
+    "require_retrieval_timestamp": true,
+    "require_sha256_for_local_files": true,
+    "allow_external_official_link_without_local_copy": true,
+    "allow_local_mirror_only_after_reuse_terms_check": true,
+    "never_overwrite_previous_pdf_version": true,
+    "never_mark_current_without_legal_review": true
+  },
+  "files": {
+    "jurisdictions": "jurisdictions.csv",
+    "central_act_seed": "central_acts_seed.csv",
+    "acts_template": "acts_import_template.csv",
+    "judgments_template": "judgments_articles_import_template.csv",
+    "taxonomy": "subject_taxonomy.csv",
+    "sources": "source_registry.csv",
+    "schema": "legal_resource.schema.json"
+  }
+}

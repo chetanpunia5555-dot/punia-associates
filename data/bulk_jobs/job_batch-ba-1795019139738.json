@@ -1,0 +1,43 @@
+{
+  "jobId": "batch-ba-1795019139738",
+  "jobName": "The_Equal_Remuneration_Act_1976_Punia_Associates_Reader_Edition.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "The_Equal_Remuneration_Act_1976_Punia_Associates_Reader_Edition.pdf",
+  "archiveSizeBytes": 75904,
+  "createdAt": "18 Nov 2026, 9:55 pm",
+  "updatedAt": "18 Nov 2026, 9:55 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 8,
+  "totalArchiveSizeBytes": 75904,
+  "items": [
+    {
+      "id": "item-1795019139643-3t66o",
+      "originalFileName": "The_Equal_Remuneration_Act_1976_Punia_Associates_Reader_Edition.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_equal_remuneration_act_1976_punia_associates_ed2bd3d8.pdf",
+      "fileSizeBytes": 75904,
+      "checksumSha256": "ed2bd3d81b78de804d55411b1b576f848ea336c20895a31216d9b8a9b23d5f0e",
+      "pageCount": 8,
+      "extractedTextExcerpt": "PUNIA ASSOCIATES • PRIVATE READER COPY 1 PUNIA ASSOCIATES INDIAN LEGAL READER SERIES STATUTORY TEXT The Equal Remuneration Act, 1976 ACT NO. 25 OF 1976 Historical / superseded labour legislation MODERN PROFESSIONAL READER EDITION A carefully typeset private reader copy prepared for legal study and reference. LEGAL STATUS / VERSION ALERT Repealed under section 69 of the Code on Wages, 2019, effective 21 November 2025, subject to savings. Retained here for historical/reference use; consult the Code on Wages and applicable rules for current law. SOURCE AND USE NOTE This edition is based on the PDF supplied for formatting. Typography, spacing, hierarchy and pagination have been redesigned; the statutory wording has not intentionally been amended. This is a private reader edition, not an official Government publication, certified copy, legal opinion or assurance that all later amendments and commencement notifications are incorporated. Before relying on any provision, verify the latest applicable text and notifications from the official Gazette and India Code. Source file: THE EQUAL REMUNERATION ACT, 1976.pdf Source PDF pages: 7 Reader edition prepared: 14 November 2026 PUNIA ASSOCIATES • LEGAL RESEARCH LIBRARY -- 1 of 8 -- PUNIA ASSOCIATES | LEGAL READER EDITION The Equal Remuneration Act, 1976 PUNIA ASSOCIATES • PRIVATE READER COPY 2 ARRANGEMENT OF SECTIONS CHAPTER I PRELIMINARY SECTIONS 1. Short title, extent and commencement. 2. Definitions. 3. Act to have overriding effect.",
+      "detectedTitle": "The Equal Remuneration Act 1976 Punia Associates Reader Edition",
+      "actNumber": "Act No. 25 of 1976",
+      "year": 1976,
+      "jurisdiction": "Central",
+      "category": "Special & Local Laws",
+      "preamble": "An Act to provide for the payment of equal remuneration to men and women workers and for the prevention of discrimination, on the ground of sex, against women in the matter of employment and for matters connected therewith or incidental thereto.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (8 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 93
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 9:55 pm] Chunked upload & PDF optimization finalized for \"The_Equal_Remuneration_Act_1976_Punia_Associates_Reader_Edition.pdf\" (8 pages)."
+  ]
+}

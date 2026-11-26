@@ -1,0 +1,316 @@
+{
+  "entities": {
+    "AdminUser": {
+      "title": "AdminUser",
+      "description": "Authorized administrator record for managing legal articles and judgments.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "Firebase Auth UID of the administrator.",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Verified administrator email address.",
+          "minLength": 5,
+          "maxLength": 160
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when admin record was created."
+        }
+      },
+      "required": ["uid", "email", "createdAt"]
+    },
+    "LegalArticleDoc": {
+      "title": "LegalArticleDoc",
+      "description": "Scholarly legal article, case commentary, or legislative analysis stored in the Punia Associates Articles Database.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique article identifier.",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "title": {
+          "type": "string",
+          "description": "Headline title of the legal article.",
+          "minLength": 5,
+          "maxLength": 300
+        },
+        "format": {
+          "type": "string",
+          "description": "Editorial format classification.",
+          "enum": [
+            "Case Commentary",
+            "Legal Explainer",
+            "Research Article",
+            "Legislative Analysis",
+            "Practical Legal Note"
+          ]
+        },
+        "subject": {
+          "type": "string",
+          "description": "Primary area of law or court jurisdiction.",
+          "minLength": 2,
+          "maxLength": 120
+        },
+        "summary": {
+          "type": "string",
+          "description": "Executive summary of the legal article.",
+          "minLength": 10,
+          "maxLength": 1500
+        },
+        "content": {
+          "type": "string",
+          "description": "Full markdown body of the legal article.",
+          "minLength": 20,
+          "maxLength": 50000
+        },
+        "author": {
+          "type": "string",
+          "description": "Author name.",
+          "minLength": 2,
+          "maxLength": 120
+        },
+        "authorTitle": {
+          "type": "string",
+          "description": "Designation of the author.",
+          "minLength": 2,
+          "maxLength": 120
+        },
+        "publicationDate": {
+          "type": "string",
+          "description": "ISO date string YYYY-MM-DD.",
+          "minLength": 8,
+          "maxLength": 30
+        },
+        "statutesDiscussed": {
+          "type": "array",
+          "description": "Bounded list of up to 10 statutes discussed."
+        },
+        "precedentsCited": {
+          "type": "array",
+          "description": "Bounded list of up to 10 judicial precedents cited."
+        },
+        "readTimeMinutes": {
+          "type": "number",
+          "description": "Estimated reading time in minutes."
+        },
+        "status": {
+          "type": "string",
+          "description": "Publication status.",
+          "enum": ["Published", "Draft", "In Review"]
+        },
+        "authorUid": {
+          "type": "string",
+          "description": "UID of the admin who created or synced the article.",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp of creation."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp of last update."
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "format",
+        "subject",
+        "summary",
+        "content",
+        "author",
+        "authorTitle",
+        "publicationDate",
+        "readTimeMinutes",
+        "status",
+        "authorUid",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "JudgmentDoc": {
+      "title": "JudgmentDoc",
+      "description": "Official Supreme Court or High Court judgment record downloaded from government sources.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique judgment identifier.",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "caseTitle": {
+          "type": "string",
+          "description": "Full cause title of the judgment.",
+          "minLength": 5,
+          "maxLength": 350
+        },
+        "court": {
+          "type": "string",
+          "description": "Name of the Court (Supreme Court of India or High Court).",
+          "minLength": 3,
+          "maxLength": 160
+        },
+        "courtBenchCategory": {
+          "type": "string",
+          "enum": ["Supreme Court", "High Court", "Tribunal"]
+        },
+        "coram": {
+          "type": "string",
+          "description": "Presiding Judges on the Bench.",
+          "minLength": 3,
+          "maxLength": 400
+        },
+        "decisionDate": {
+          "type": "string",
+          "description": "Date of judgment YYYY-MM-DD.",
+          "minLength": 8,
+          "maxLength": 30
+        },
+        "caseNumber": {
+          "type": "string",
+          "description": "Official docket or appeal number.",
+          "minLength": 2,
+          "maxLength": 180
+        },
+        "neutralCitation": {
+          "type": "string",
+          "description": "Official Neutral Citation (e.g., 2024 INSC 205, 2024:PHHC:106421).",
+          "minLength": 2,
+          "maxLength": 100
+        },
+        "subject": {
+          "type": "string",
+          "description": "Primary legal subject.",
+          "minLength": 2,
+          "maxLength": 140
+        },
+        "judgmentType": {
+          "type": "string",
+          "enum": [
+            "Landmark Judgment",
+            "Constitutional Bench",
+            "Division Bench",
+            "Single Bench",
+            "Full Bench"
+          ]
+        },
+        "facts": {
+          "type": "string",
+          "description": "Factual matrix of the case.",
+          "minLength": 10,
+          "maxLength": 10000
+        },
+        "ratioDecidendi": {
+          "type": "string",
+          "description": "Binding ratio decidendi of the court.",
+          "minLength": 10,
+          "maxLength": 10000
+        },
+        "finalDecision": {
+          "type": "string",
+          "description": "Operative order of the court.",
+          "minLength": 5,
+          "maxLength": 4000
+        },
+        "sourceUrl": {
+          "type": "string",
+          "description": "Official government source URL (sci.gov.in, highcourtchd.gov.in, ecourts.gov.in, indiacode.nic.in).",
+          "minLength": 8,
+          "maxLength": 600
+        },
+        "officialPdfUrl": {
+          "type": "string",
+          "description": "URL or local path to the downloaded government PDF.",
+          "minLength": 5,
+          "maxLength": 600
+        },
+        "localGovtPdfPath": {
+          "type": "string",
+          "description": "Local server path under /judgments/govt-sourced/ where the verified government PDF is stored.",
+          "minLength": 5,
+          "maxLength": 300
+        },
+        "checksumSha256": {
+          "type": "string",
+          "description": "SHA-256 cryptographic hash of the downloaded government PDF.",
+          "minLength": 16,
+          "maxLength": 128
+        },
+        "status": {
+          "type": "string",
+          "enum": ["Published", "Draft", "In Review"]
+        },
+        "authorUid": {
+          "type": "string",
+          "description": "UID of the administrator who published/synced the judgment.",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp of creation."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp of last update."
+        }
+      },
+      "required": [
+        "id",
+        "caseTitle",
+        "court",
+        "courtBenchCategory",
+        "coram",
+        "decisionDate",
+        "caseNumber",
+        "neutralCitation",
+        "subject",
+        "judgmentType",
+        "facts",
+        "ratioDecidendi",
+        "finalDecision",
+        "sourceUrl",
+        "officialPdfUrl",
+        "localGovtPdfPath",
+        "checksumSha256",
+        "status",
+        "authorUid",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/admins/{adminUid}": {
+      "schema": { "$ref": "#/entities/AdminUser" },
+      "description": "Stores verified administrator accounts allowed to create or modify articles and judgments."
+    },
+    "/articles/{articleId}": {
+      "schema": { "$ref": "#/entities/LegalArticleDoc" },
+      "description": "Publicly readable Published legal articles; write access restricted to verified administrators."
+    },
+    "/judgments/{judgmentId}": {
+      "schema": { "$ref": "#/entities/JudgmentDoc" },
+      "description": "Publicly readable Published court judgments downloaded from government portals; write access restricted to verified administrators."
+    }
+  }
+}

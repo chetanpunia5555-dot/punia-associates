@@ -1,0 +1,43 @@
+{
+  "jobId": "batch-ba-1795019144108",
+  "jobName": "The_Government_Buildings_Act_1899_Punia_Associates_Reader_Edition.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "The_Government_Buildings_Act_1899_Punia_Associates_Reader_Edition.pdf",
+  "archiveSizeBytes": 60711,
+  "createdAt": "18 Nov 2026, 9:55 pm",
+  "updatedAt": "18 Nov 2026, 9:55 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 3,
+  "totalArchiveSizeBytes": 60711,
+  "items": [
+    {
+      "id": "item-1795019144029-0w2xh",
+      "originalFileName": "The_Government_Buildings_Act_1899_Punia_Associates_Reader_Edition.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_government_buildings_act_1899_punia_associat_bb9ff3d3.pdf",
+      "fileSizeBytes": 60711,
+      "checksumSha256": "bb9ff3d3af35b2d246d6b45c6e454b85b79ce3ce80cdcf28cb8ccb173226a38f",
+      "pageCount": 3,
+      "extractedTextExcerpt": "PUNIA ASSOCIATES • PRIVATE READER COPY 1 PUNIA ASSOCIATES INDIAN LEGAL READER SERIES STATUTORY TEXT The Government Buildings Act, 1899 ACT NO. 4 OF 1899 Central legislation / public administration MODERN PROFESSIONAL READER EDITION A carefully typeset private reader copy prepared for legal study and reference. SOURCE AND USE NOTE This edition is based on the PDF supplied for formatting. Typography, spacing, hierarchy and pagination have been redesigned; the statutory wording has not intentionally been amended. This is a private reader edition, not an official Government publication, certified copy, legal opinion or assurance that all later amendments and commencement notifications are incorporated. Before relying on any provision, verify the latest applicable text and notifications from the official Gazette and India Code. Source file: THE GOVERNMENT BUILDINGS ACT, 1899 (1).pdf Source PDF pages: 3 Reader edition prepared: 14 November 2026 PUNIA ASSOCIATES • LEGAL RESEARCH LIBRARY -- 1 of 3 -- PUNIA ASSOCIATES | LEGAL READER EDITION The Government Buildings Act, 1899 PUNIA ASSOCIATES • PRIVATE READER COPY 2 ARRANGEMENT OF SECTIONS SECTIONS 1. Short title and extent. 2. “Municipal authority” defined. 3. Exemption of certain Government buildings from municipal areas to regulate the erection, etc., of buildings within municipalities. 4. Objections or suggestions as to erection, etc., of certain Government buildings within municipalities, how to be made and dealt with. 1 ACT NO.",
+      "detectedTitle": "The Government Buildings Act 1899 Punia Associates Reader Edition",
+      "actNumber": "Act No. 4 of 1899",
+      "year": 1899,
+      "jurisdiction": "Central",
+      "category": "Special & Local Laws",
+      "preamble": "An Act to provide for the exemption from the operation of municipal building laws of certain buildings and lands which are the property, or in the occupation, of the Government and situate within the limits of a municipality.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (3 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 93
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 9:55 pm] Chunked upload & PDF optimization finalized for \"The_Government_Buildings_Act_1899_Punia_Associates_Reader_Edition.pdf\" (3 pages)."
+  ]
+}

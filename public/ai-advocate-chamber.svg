@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Chamber Gradient -->
+    <linearGradient id="chamberBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070D1B" />
+      <stop offset="40%" stop-color="#0E172E" />
+      <stop offset="100%" stop-color="#050914" />
+    </linearGradient>
+
+    <!-- Warm Ambient Light -->
+    <radialGradient id="deskLamp" cx="70%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#D97706" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#070D1B" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Polished Mahogany Desk -->
+    <linearGradient id="deskWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B1C10" />
+      <stop offset="30%" stop-color="#261109" />
+      <stop offset="100%" stop-color="#140804" />
+    </linearGradient>
+
+    <!-- Advocate Robe / Suit Gradient -->
+    <linearGradient id="advocateRobe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Gold Accent -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+
+    <!-- Skin Tone -->
+    <linearGradient id="advocateSkin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2B18A" />
+      <stop offset="100%" stop-color="#C28659" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Wall & Atmosphere -->
+  <rect width="600" height="500" rx="24" fill="url(#chamberBg)" />
+  <circle cx="420" cy="180" r="220" fill="url(#deskLamp)" />
+
+  <!-- Background Law Library Bookshelf (Left & Right) -->
+  <g opacity="0.25">
+    <!-- Bookshelf Frames -->
+    <rect x="20" y="30" width="160" height="260" rx="4" fill="#1E293B" stroke="#475569" stroke-width="1.5" />
+    <line x1="20" y1="110" x2="180" y2="110" stroke="#F59E0B" stroke-width="2" />
+    <line x1="20" y1="190" x2="180" y2="190" stroke="#F59E0B" stroke-width="2" />
+    
+    <!-- Top Shelf Books -->
+    <rect x="28" y="42" width="18" height="66" rx="2" fill="#991B1B" />
+    <rect x="49" y="48" width="14" height="60" rx="2" fill="#1E3A8A" />
+    <rect x="66" y="38" width="22" height="70" rx="2" fill="#065F46" />
+    <rect x="91" y="45" width="16" height="63" rx="2" fill="#D97706" />
+    <rect x="110" y="40" width="20" height="68" rx="2" fill="#78350F" />
+    <rect x="133" y="46" width="18" height="62" rx="2" fill="#312E81" />
+    <rect x="154" y="42" width="16" height="66" rx="2" fill="#991B1B" />
+
+    <!-- Middle Shelf Law Digests (AIR, SCC, SCR) -->
+    <rect x="28" y="122" width="24" height="66" rx="2" fill="#78350F" />
+    <rect x="55" y="120" width="24" height="68" rx="2" fill="#78350F" />
+    <rect x="82" y="124" width="22" height="64" rx="2" fill="#1E293B" />
+    <rect x="107" y="120" width="26" height="68" rx="2" fill="#991B1B" />
+    <rect x="136" y="122" width="22" height="66" rx="2" fill="#065F46" />
+    <rect x="161" y="125" width="14" height="63" rx="2" fill="#D97706" />
+
+    <!-- Right Window / High Court Seal (Subtle) -->
+    <circle cx="500" cy="110" r="50" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.4" />
+    <path d="M470 110 L530 110 M500 80 L500 140" stroke="#F59E0B" stroke-width="2" opacity="0.4" />
+  </g>
+
+  <!-- Big Scales of Justice in Chamber Watermark -->
+  <g opacity="0.15" stroke="#F59E0B" stroke-width="3" fill="none" transform="translate(420, 40) scale(0.7)">
+    <line x1="100" y1="20" x2="100" y2="180" stroke-width="6" />
+    <line x1="30" y1="60" x2="170" y2="60" stroke-width="5" />
+    <path d="M30 60 L10 120 L50 120 Z" fill="#F59E0B" opacity="0.4" />
+    <path d="M170 60 L150 120 L190 120 Z" fill="#F59E0B" opacity="0.4" />
+  </g>
+
+  <!-- Senior Indian Advocate Figure (Centered & Dignified) -->
+  <g id="advocate">
+    <!-- Body / Black Lawyer Gown & Coat -->
+    <path d="M180 500 C185 360 230 300 280 270 L340 270 C390 300 435 360 440 500 Z" fill="url(#advocateRobe)" stroke="#334155" stroke-width="2" />
+    
+    <!-- Advocate Coat Lapels -->
+    <path d="M260 275 L300 420 L310 500 L270 500 L235 370 Z" fill="#0B1325" />
+    <path d="M360 275 L320 420 L310 500 L350 500 L385 370 Z" fill="#0B1325" />
+    <path d="M260 275 L300 400 L320 400 L360 275" stroke="#475569" stroke-width="2.5" fill="none" />
+
+    <!-- Crisp White Wing-Collar Shirt -->
+    <polygon points="295,270 325,270 320,400 300,400" fill="#FFFFFF" />
+    <polygon points="280,270 305,295 275,300" fill="#E2E8F0" />
+    <polygon points="340,270 315,295 345,300" fill="#E2E8F0" />
+
+    <!-- Legal Advocate Neck Bands (White Tabs) -->
+    <g>
+      <rect x="301" y="295" width="9" height="60" rx="1.5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+      <rect x="312" y="295" width="9" height="60" rx="1.5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+      <rect x="299" y="290" width="24" height="7" rx="2" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1" />
+    </g>
+
+    <!-- Neck -->
+    <path d="M298,225 L298,275 C298,285 322,285 322,275 L322,225 Z" fill="url(#advocateSkin)" />
+    <path d="M298,255 C308,268 318,268 322,255" stroke="#B47348" stroke-width="2" fill="none" opacity="0.4" />
+
+    <!-- Head & Face -->
+    <path d="M276 155 C276 95 344 95 344 155 C344 208 330 236 310 236 C290 236 276 208 276 155 Z" fill="url(#advocateSkin)" />
+    
+    <!-- Ears -->
+    <path d="M272 155 C268 150 268 172 276 175 Z" fill="#C28659" />
+    <path d="M348 155 C352 150 352 172 344 175 Z" fill="#C28659" />
+
+    <!-- Professional Hair Style (Neat Senior Advocate Cut) -->
+    <path d="M274 140 C274 85 305 72 310 72 C325 72 346 85 346 140 C340 115 330 98 310 98 C290 98 280 115 274 140 Z" fill="#1E293B" />
+    <path d="M275 130 C280 110 295 98 312 96 C330 98 342 110 345 130 C340 120 330 108 320 104 C310 100 290 102 282 112 Z" fill="#475569" opacity="0.7" />
+
+    <!-- Dignified Eyebrows & Glasses -->
+    <path d="M288 138 C294 135 302 136 306 140" stroke="#1E293B" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M314 140 C318 136 326 135 332 138" stroke="#1E293B" stroke-width="3" stroke-linecap="round" fill="none" />
+    
+    <!-- Rimless Golden Eyeglass Frames -->
+    <rect x="284" y="142" width="24" height="18" rx="4" fill="#FFFFFF" fill-opacity="0.1" stroke="#F59E0B" stroke-width="1.8" />
+    <rect x="312" y="142" width="24" height="18" rx="4" fill="#FFFFFF" fill-opacity="0.1" stroke="#F59E0B" stroke-width="1.8" />
+    <line x1="308" y1="149" x2="312" y2="149" stroke="#F59E0B" stroke-width="2" />
+
+    <!-- Keen, Empathetic Eyes -->
+    <circle cx="296" cy="151" r="3.5" fill="#0F172A" />
+    <circle cx="295" cy="149.5" r="1.2" fill="#FFFFFF" />
+    <circle cx="324" cy="151" r="3.5" fill="#0F172A" />
+    <circle cx="323" cy="149.5" r="1.2" fill="#FFFFFF" />
+
+    <!-- Nose & Moustache / Confident Smile -->
+    <path d="M310 148 L307 169 C307 172 313 172 313 169 Z" fill="#B47348" />
+    <path d="M301 180 C306 177 314 177 319 180" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <path d="M300 187 C306 193 314 193 320 187" stroke="#92400E" stroke-width="2" stroke-linecap="round" fill="none" />
+
+    <!-- Advocate Chamber Badge (Ashoka / Scales) on Left Lapel -->
+    <circle cx="270" cy="325" r="9" fill="url(#goldGradient)" stroke="#78350F" stroke-width="1" />
+    <path d="M270 319 L270 331 M266 322 L274 322" stroke="#451A03" stroke-width="1.5" />
+  </g>
+
+  <!-- Large Polished Wooden Desk with Documents & Brass Scales -->
+  <g id="desk">
+    <!-- Desk Top Surface -->
+    <polygon points="0,420 600,420 600,500 0,500" fill="url(#deskWood)" />
+    <line x1="0" y1="420" x2="600" y2="420" stroke="#B45309" stroke-width="3" />
+    <line x1="0" y1="424" x2="600" y2="424" stroke="#F59E0B" stroke-width="1" opacity="0.5" />
+
+    <!-- Desk Legal Brief Files (Left) -->
+    <g transform="translate(60, 400)">
+      <polygon points="0,20 110,10 130,35 15,45" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+      <polygon points="2,15 112,5 125,25 15,35" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1" />
+      <rect x="18" y="24" width="70" height="4" fill="#991B1B" />
+      <text x="25" y="22" font-family="sans-serif" font-size="7" font-weight="bold" fill="#78350F">SUPREME COURT / HIGH COURT BRIEF</text>
+    </g>
+
+    <!-- Brass Scales of Justice Desk Ornament (Right) -->
+    <g transform="translate(460, 360)">
+      <!-- Base & Pole -->
+      <ellipse cx="40" cy="70" rx="25" ry="6" fill="url(#goldGradient)" stroke="#78350F" stroke-width="1" />
+      <line x1="40" y1="70" x2="40" y2="10" stroke="url(#goldGradient)" stroke-width="4" />
+      <!-- Beam -->
+      <line x1="15" y1="20" x2="65" y2="20" stroke="url(#goldGradient)" stroke-width="3" />
+      <!-- Left Pan -->
+      <line x1="15" y1="20" x2="5" y2="40" stroke="#D97706" stroke-width="1.2" />
+      <line x1="15" y1="20" x2="25" y2="40" stroke="#D97706" stroke-width="1.2" />
+      <ellipse cx="15" cy="40" rx="12" ry="3" fill="url(#goldGradient)" />
+      <!-- Right Pan -->
+      <line x1="65" y1="20" x2="55" y2="40" stroke="#D97706" stroke-width="1.2" />
+      <line x1="65" y1="20" x2="75" y2="40" stroke="#D97706" stroke-width="1.2" />
+      <ellipse cx="65" cy="40" rx="12" ry="3" fill="url(#goldGradient)" />
+    </g>
+
+    <!-- Sleek Advocate Laptop / Tablet (Subtle Tech Symbol) -->
+    <g transform="translate(250, 422)">
+      <polygon points="10,5 110,5 120,30 0,30" fill="#334155" stroke="#64748B" stroke-width="1.5" />
+      <rect x="25" y="10" width="70" height="15" rx="2" fill="#0B1325" />
+      <circle cx="60" cy="17" r="3" fill="#10B981" />
+    </g>
+  </g>
+
+  <!-- Top Badges: "AI SENIOR ADVOCATE" & "BILINGUAL LIVE SEARCH" -->
+  <g transform="translate(30, 25)">
+    <rect width="180" height="34" rx="17" fill="#0B1325" fill-opacity="0.9" stroke="url(#goldGradient)" stroke-width="1.5" />
+    <circle cx="18" cy="17" r="5" fill="#10B981" className="animate-pulse" />
+    <text x="32" y="21" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" letter-spacing="0.5">AI ADVOCATE DESK</text>
+  </g>
+
+  <!-- Dialects Supported Pill (Right Top) -->
+  <g transform="translate(370, 25)">
+    <rect width="200" height="34" rx="17" fill="#0B1325" fill-opacity="0.9" stroke="#F59E0B" stroke-width="1.2" />
+    <text x="14" y="21" font-family="sans-serif" font-size="10" font-weight="bold" fill="#FDE68A">हरियाणवी • ਪੰਜਾਬੀ • राजस्थानी • Eng</text>
+  </g>
+
+  <!-- Golden Outer Frame Border -->
+  <rect x="4" y="4" width="592" height="492" rx="20" fill="none" stroke="url(#goldGradient)" stroke-width="2.5" opacity="0.6" />
+</svg>

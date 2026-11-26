@@ -1,0 +1,43 @@
+{
+  "jobId": "batch-ba-1795019133196",
+  "jobName": "The_Extradition_Act_1962_Punia_Associates_Reader_Edition.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "The_Extradition_Act_1962_Punia_Associates_Reader_Edition.pdf",
+  "archiveSizeBytes": 87944,
+  "createdAt": "18 Nov 2026, 9:55 pm",
+  "updatedAt": "18 Nov 2026, 9:55 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 12,
+  "totalArchiveSizeBytes": 87944,
+  "items": [
+    {
+      "id": "item-1795019132846-k97u5",
+      "originalFileName": "The_Extradition_Act_1962_Punia_Associates_Reader_Edition.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_extradition_act_1962_punia_associates_reader_4d7496ce.pdf",
+      "fileSizeBytes": 87944,
+      "checksumSha256": "4d7496ce6d505a9d04d5d845a8097e94ac848f90757b8fa16a2d9b4786afbdce",
+      "pageCount": 12,
+      "extractedTextExcerpt": "PUNIA ASSOCIATES • PRIVATE READER COPY 1 PUNIA ASSOCIATES INDIAN LEGAL READER SERIES STATUTORY TEXT The Extradition Act, 1962 ACT NO. 34 OF 1962 Central criminal and international cooperation law MODERN PROFESSIONAL READER EDITION A carefully typeset private reader copy prepared for legal study and reference. SOURCE AND USE NOTE This edition is based on the PDF supplied for formatting. Typography, spacing, hierarchy and pagination have been redesigned; the statutory wording has not intentionally been amended. This is a private reader edition, not an official Government publication, certified copy, legal opinion or assurance that all later amendments and commencement notifications are incorporated. Before relying on any provision, verify the latest applicable text and notifications from the official Gazette and India Code. Source file: THE EXTRADITION ACT, 1962 (1).pdf Source PDF pages: 12 Reader edition prepared: 14 November 2026 PUNIA ASSOCIATES • LEGAL RESEARCH LIBRARY -- 1 of 12 -- PUNIA ASSOCIATES | LEGAL READER EDITION The Extradition Act, 1962 PUNIA ASSOCIATES • PRIVATE READER COPY 2 ARRANGEMENT OF SECTIONS CHAPTER I PRELIMINARY SECTIONS 1. Short title, extent and commencement. 2. Definitions. 3. Application of Act. CHAPTER II EXTRADITION OF FUGITIVE CRIMINALS TO FOREIGN STATE TO WHICH CHAPTER III DOES NOT APPLY 4. Requisition for surrender. 5. Order for magisterial inquiry. 6. Issue of warrant for arrest. 7. Procedure before magistrate. 8. Surrender of fugitive crimi",
+      "detectedTitle": "The Extradition Act 1962 Punia Associates Reader Edition",
+      "actNumber": "Act No. 34 of 1962",
+      "year": 1962,
+      "jurisdiction": "Central",
+      "category": "Special & Local Laws",
+      "preamble": "An Act to consolidate and amend the law relating to the extradition of fugitive criminals 1[and to provide for matters connected therewith or incidental thereto.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (12 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 93
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 9:55 pm] Chunked upload & PDF optimization finalized for \"The_Extradition_Act_1962_Punia_Associates_Reader_Edition.pdf\" (12 pages)."
+  ]
+}

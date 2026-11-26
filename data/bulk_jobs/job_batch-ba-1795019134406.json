@@ -1,0 +1,43 @@
+{
+  "jobId": "batch-ba-1795019134406",
+  "jobName": "The_Food_Safety_and_Standards_Act_2006_Punia_Associates_Reader_Edition.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "The_Food_Safety_and_Standards_Act_2006_Punia_Associates_Reader_Edition.pdf",
+  "archiveSizeBytes": 182491,
+  "createdAt": "18 Nov 2026, 9:55 pm",
+  "updatedAt": "18 Nov 2026, 9:55 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 43,
+  "totalArchiveSizeBytes": 182491,
+  "items": [
+    {
+      "id": "item-1795019134246-v1inf",
+      "originalFileName": "The_Food_Safety_and_Standards_Act_2006_Punia_Associates_Reader_Edition.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_food_safety_and_standards_act_2006_punia_ass_9315bc16.pdf",
+      "fileSizeBytes": 182491,
+      "checksumSha256": "9315bc1668c0e4051643eec1b1911f9e540cb1c3f327d43b7d5f9084b931b43d",
+      "pageCount": 43,
+      "extractedTextExcerpt": "PUNIA ASSOCIATES • PRIVATE READER COPY 1 PUNIA ASSOCIATES INDIAN LEGAL READER SERIES STATUTORY TEXT The Food Safety and Standards Act, 2006 Central food safety legislation MODERN PROFESSIONAL READER EDITION A carefully typeset private reader copy prepared for legal study and reference. SOURCE AND USE NOTE This edition is based on the PDF supplied for formatting. Typography, spacing, hierarchy and pagination have been redesigned; the statutory wording has not intentionally been amended. This is a private reader edition, not an official Government publication, certified copy, legal opinion or assurance that all later amendments and commencement notifications are incorporated. Before relying on any provision, verify the latest applicable text and notifications from the official Gazette and India Code. Source file: THE FOOD SAFETY AND STANDARDS ACT, 2006 (1).pdf Source PDF pages: 45 Reader edition prepared: 14 November 2026 PUNIA ASSOCIATES • LEGAL RESEARCH LIBRARY -- 1 of 43 -- PUNIA ASSOCIATES | LEGAL READER EDITION The Food Safety and Standards Act, 2006 PUNIA ASSOCIATES • PRIVATE READER COPY 2 ARRANGEMENT OF SECTIONS CHAPTER I PRELIMINARY SECTIONS 1. Short title, extent and commencement. 2. Declaration as to expediency of control by the Union. 3. Definitions. CHAPTER II FOOD SAFETYAND STANDARDS AUTHORITY OF INDIA 4. Establishment of Food Safety and Standards Authority of India. 5. Composition of Food Authority and qualifications for appointment of its Chairperson and other",
+      "detectedTitle": "The Food Safety and Standards Act 2006 Punia Associates Reader Edition",
+      "actNumber": "Act of Parliament (2006)",
+      "year": 2006,
+      "jurisdiction": "Central",
+      "category": "Special & Local Laws",
+      "preamble": "An Act to consolidate, amend, and give effect to statutory provisions regarding The Food Safety and Standards Act 2006 Punia Associates Reader Edition.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (43 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 93
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 9:55 pm] Chunked upload & PDF optimization finalized for \"The_Food_Safety_and_Standards_Act_2006_Punia_Associates_Reader_Edition.pdf\" (43 pages)."
+  ]
+}

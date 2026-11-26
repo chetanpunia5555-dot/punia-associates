@@ -1,0 +1,208 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Pillar 1: Global Safety Net (Default-Deny Catch-All)
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Phase 3: Hardened Primitives
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null && request.auth.token.email_verified == true;
+    }
+
+    function isBootstrappedAdmin() {
+      return isSignedIn() && request.auth.token.email == 'chetanpunia5555@gmail.com';
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        isBootstrappedAdmin() ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    function isValidBoundedStringArray(arr) {
+      return arr is list && arr.size() <= 10 && (arr.size() == 0 || (arr[0] is string && arr[0].size() <= 200));
+    }
+
+    // Validation Blueprint: AdminUser
+    function isValidAdminUser(data) {
+      return data.keys().hasAll(['uid', 'email', 'createdAt']) &&
+        data.keys().hasOnly(['uid', 'email', 'createdAt']) &&
+        data.uid is string && data.uid.size() >= 1 && data.uid.size() <= 128 &&
+        data.uid.matches('^[a-zA-Z0-9_\\-]+$') &&
+        data.uid == request.auth.uid &&
+        data.email is string && data.email.size() >= 5 && data.email.size() <= 160 &&
+        data.createdAt is timestamp;
+    }
+
+    // Validation Blueprint: LegalArticleDoc
+    function isValidLegalArticleDoc(data) {
+      return data.keys().hasAll([
+          'id', 'title', 'format', 'subject', 'summary', 'content',
+          'author', 'authorTitle', 'publicationDate', 'readTimeMinutes',
+          'status', 'authorUid', 'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'id', 'title', 'format', 'subject', 'summary', 'content',
+          'author', 'authorTitle', 'publicationDate', 'statutesDiscussed',
+          'precedentsCited', 'readTimeMinutes', 'status', 'authorUid',
+          'createdAt', 'updatedAt'
+        ]) &&
+        data.id is string && data.id.size() >= 1 && data.id.size() <= 128 &&
+        data.id.matches('^[a-zA-Z0-9_\\-]+$') &&
+        data.title is string && data.title.size() >= 5 && data.title.size() <= 300 &&
+        data.format is string && data.format in [
+          'Case Commentary',
+          'Legal Explainer',
+          'Research Article',
+          'Legislative Analysis',
+          'Practical Legal Note'
+        ] &&
+        data.subject is string && data.subject.size() >= 2 && data.subject.size() <= 120 &&
+        data.summary is string && data.summary.size() >= 10 && data.summary.size() <= 1500 &&
+        data.content is string && data.content.size() >= 20 && data.content.size() <= 50000 &&
+        data.author is string && data.author.size() >= 2 && data.author.size() <= 120 &&
+        data.authorTitle is string && data.authorTitle.size() >= 2 && data.authorTitle.size() <= 120 &&
+        data.publicationDate is string && data.publicationDate.size() >= 8 && data.publicationDate.size() <= 30 &&
+        (!('statutesDiscussed' in data) || isValidBoundedStringArray(data.statutesDiscussed)) &&
+        (!('precedentsCited' in data) || isValidBoundedStringArray(data.precedentsCited)) &&
+        data.readTimeMinutes is number && data.readTimeMinutes >= 1 && data.readTimeMinutes <= 120 &&
+        data.status is string && data.status in ['Published', 'Draft', 'In Review'] &&
+        data.authorUid is string && data.authorUid.size() >= 1 && data.authorUid.size() <= 128 &&
+        data.authorUid == request.auth.uid &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    // Validation Blueprint: JudgmentDoc
+    function isValidJudgmentDoc(data) {
+      return data.keys().hasAll([
+          'id', 'caseTitle', 'court', 'courtBenchCategory', 'coram',
+          'decisionDate', 'caseNumber', 'neutralCitation', 'subject',
+          'judgmentType', 'facts', 'ratioDecidendi', 'finalDecision',
+          'sourceUrl', 'officialPdfUrl', 'localGovtPdfPath', 'checksumSha256',
+          'status', 'authorUid', 'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'id', 'caseTitle', 'court', 'courtBenchCategory', 'coram',
+          'decisionDate', 'caseNumber', 'neutralCitation', 'subject',
+          'judgmentType', 'facts', 'ratioDecidendi', 'finalDecision',
+          'sourceUrl', 'officialPdfUrl', 'localGovtPdfPath', 'checksumSha256',
+          'status', 'authorUid', 'createdAt', 'updatedAt'
+        ]) &&
+        data.id is string && data.id.size() >= 1 && data.id.size() <= 128 &&
+        data.id.matches('^[a-zA-Z0-9_\\-]+$') &&
+        data.caseTitle is string && data.caseTitle.size() >= 5 && data.caseTitle.size() <= 350 &&
+        data.court is string && data.court.size() >= 3 && data.court.size() <= 160 &&
+        data.courtBenchCategory is string && data.courtBenchCategory in ['Supreme Court', 'High Court', 'Tribunal'] &&
+        data.coram is string && data.coram.size() >= 3 && data.coram.size() <= 400 &&
+        data.decisionDate is string && data.decisionDate.size() >= 8 && data.decisionDate.size() <= 30 &&
+        data.caseNumber is string && data.caseNumber.size() >= 2 && data.caseNumber.size() <= 180 &&
+        data.neutralCitation is string && data.neutralCitation.size() >= 2 && data.neutralCitation.size() <= 100 &&
+        data.subject is string && data.subject.size() >= 2 && data.subject.size() <= 140 &&
+        data.judgmentType is string && data.judgmentType in [
+          'Landmark Judgment',
+          'Constitutional Bench',
+          'Division Bench',
+          'Single Bench',
+          'Full Bench'
+        ] &&
+        data.facts is string && data.facts.size() >= 10 && data.facts.size() <= 10000 &&
+        data.ratioDecidendi is string && data.ratioDecidendi.size() >= 10 && data.ratioDecidendi.size() <= 10000 &&
+        data.finalDecision is string && data.finalDecision.size() >= 5 && data.finalDecision.size() <= 4000 &&
+        data.sourceUrl is string && data.sourceUrl.size() >= 8 && data.sourceUrl.size() <= 600 &&
+        data.officialPdfUrl is string && data.officialPdfUrl.size() >= 5 && data.officialPdfUrl.size() <= 600 &&
+        data.localGovtPdfPath is string && data.localGovtPdfPath.size() >= 5 && data.localGovtPdfPath.size() <= 300 &&
+        data.checksumSha256 is string && data.checksumSha256.size() >= 16 && data.checksumSha256.size() <= 128 &&
+        data.status is string && data.status in ['Published', 'Draft', 'In Review'] &&
+        data.authorUid is string && data.authorUid.size() >= 1 && data.authorUid.size() <= 128 &&
+        data.authorUid == request.auth.uid &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    // Collection 1: /admins/{adminUid} (PII Isolated — No list allowed)
+    match /admins/{adminUid} {
+      allow get: if isSignedIn() && isValidId(adminUid) && (request.auth.uid == adminUid || isAdmin());
+      allow list: if false;
+      allow create: if isSignedIn() &&
+        isValidId(adminUid) &&
+        isValidAdminUser(incoming()) &&
+        incoming().uid == adminUid &&
+        incoming().createdAt == request.time &&
+        isBootstrappedAdmin();
+      allow update: if false;
+      allow delete: if isSignedIn() && isValidId(adminUid) && isBootstrappedAdmin();
+    }
+
+    // Collection 2: /articles/{articleId}
+    match /articles/{articleId} {
+      allow get: if isValidId(articleId) && (existing().status == 'Published' || isAdmin());
+      allow list: if existing().status == 'Published' || isBootstrappedAdmin();
+      allow create: if isSignedIn() &&
+        isValidId(articleId) &&
+        isValidLegalArticleDoc(incoming()) &&
+        incoming().id == articleId &&
+        incoming().createdAt == request.time &&
+        incoming().updatedAt == request.time &&
+        isAdmin();
+      allow update: if isSignedIn() &&
+        isValidId(articleId) &&
+        isValidLegalArticleDoc(incoming()) &&
+        incoming().id == existing().id &&
+        incoming().authorUid == existing().authorUid &&
+        incoming().createdAt == existing().createdAt &&
+        incoming().updatedAt == request.time &&
+        incoming().diff(existing()).affectedKeys().hasOnly([
+          'title', 'format', 'subject', 'summary', 'content',
+          'author', 'authorTitle', 'publicationDate', 'statutesDiscussed',
+          'precedentsCited', 'readTimeMinutes', 'status', 'updatedAt'
+        ]) &&
+        ((existing().status != 'Published' && incoming().authorUid == request.auth.uid) || isAdmin());
+      allow delete: if isSignedIn() && isValidId(articleId) && isAdmin();
+    }
+
+    // Collection 3: /judgments/{judgmentId}
+    match /judgments/{judgmentId} {
+      allow get: if isValidId(judgmentId) && (existing().status == 'Published' || isAdmin());
+      allow list: if existing().status == 'Published' || isBootstrappedAdmin();
+      allow create: if isSignedIn() &&
+        isValidId(judgmentId) &&
+        isValidJudgmentDoc(incoming()) &&
+        incoming().id == judgmentId &&
+        incoming().createdAt == request.time &&
+        incoming().updatedAt == request.time &&
+        isAdmin();
+      allow update: if isSignedIn() &&
+        isValidId(judgmentId) &&
+        isValidJudgmentDoc(incoming()) &&
+        incoming().id == existing().id &&
+        incoming().authorUid == existing().authorUid &&
+        incoming().createdAt == existing().createdAt &&
+        incoming().updatedAt == request.time &&
+        incoming().diff(existing()).affectedKeys().hasOnly([
+          'caseTitle', 'court', 'courtBenchCategory', 'coram',
+          'decisionDate', 'caseNumber', 'neutralCitation', 'subject',
+          'judgmentType', 'facts', 'ratioDecidendi', 'finalDecision',
+          'sourceUrl', 'officialPdfUrl', 'localGovtPdfPath', 'checksumSha256',
+          'status', 'updatedAt'
+        ]) &&
+        ((existing().status != 'Published' && incoming().authorUid == request.auth.uid) || isAdmin());
+      allow delete: if isSignedIn() && isValidId(judgmentId) && isAdmin();
+    }
+  }
+}

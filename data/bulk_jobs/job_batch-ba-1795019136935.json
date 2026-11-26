@@ -1,0 +1,43 @@
+{
+  "jobId": "batch-ba-1795019136935",
+  "jobName": "The_Disaster_Management_Act_2005_Punia_Associates_Reader_Edition.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "The_Disaster_Management_Act_2005_Punia_Associates_Reader_Edition.pdf",
+  "archiveSizeBytes": 135416,
+  "createdAt": "18 Nov 2026, 9:55 pm",
+  "updatedAt": "18 Nov 2026, 9:55 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 30,
+  "totalArchiveSizeBytes": 135416,
+  "items": [
+    {
+      "id": "item-1795019136843-e9nxe",
+      "originalFileName": "The_Disaster_Management_Act_2005_Punia_Associates_Reader_Edition.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_disaster_management_act_2005_punia_associate_9a30f506.pdf",
+      "fileSizeBytes": 135416,
+      "checksumSha256": "9a30f506a1d08a09a0864e25e681291a8f36d2236b67bc95661deb69995d0e29",
+      "pageCount": 30,
+      "extractedTextExcerpt": "PUNIA ASSOCIATES • PRIVATE READER COPY 1 PUNIA ASSOCIATES INDIAN LEGAL READER SERIES STATUTORY TEXT The Disaster Management Act, 2005 ACT NO. 53 OF 2005 Central legislation / disaster management MODERN PROFESSIONAL READER EDITION A carefully typeset private reader copy prepared for legal study and reference. LEGAL STATUS / VERSION ALERT Amended by the Disaster Management (Amendment) Act, 2025. The supplied source has not been certified as incorporating that amendment. Consult the amending Act and current official consolidation. SOURCE AND USE NOTE This edition is based on the PDF supplied for formatting. Typography, spacing, hierarchy and pagination have been redesigned; the statutory wording has not intentionally been amended. This is a private reader edition, not an official Government publication, certified copy, legal opinion or assurance that all later amendments and commencement notifications are incorporated. Before relying on any provision, verify the latest applicable text and notifications from the official Gazette and India Code. Source file: THE DISASTER MANAGEMENT ACT, 2005.pdf Source PDF pages: 29 Reader edition prepared: 14 November 2026 PUNIA ASSOCIATES • LEGAL RESEARCH LIBRARY -- 1 of 30 -- PUNIA ASSOCIATES | LEGAL READER EDITION The Disaster Management Act, 2005 PUNIA ASSOCIATES • PRIVATE READER COPY 2 ARRAGEMENT OF SECTIONS CHAPTER I PRELIMINARY SECTIONS 1. Short title, extent and commencement. 2. Definitions. CHAPTER II THE NATIONAL DISASTER MANAGEMENT A",
+      "detectedTitle": "The Disaster Management Act 2005 Punia Associates Reader Edition",
+      "actNumber": "Act No. 53 of 2005",
+      "year": 2005,
+      "jurisdiction": "Central",
+      "category": "Special & Local Laws",
+      "preamble": "An Act to consolidate, amend, and give effect to statutory provisions regarding The Disaster Management Act 2005 Punia Associates Reader Edition.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (30 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 93
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 9:55 pm] Chunked upload & PDF optimization finalized for \"The_Disaster_Management_Act_2005_Punia_Associates_Reader_Edition.pdf\" (30 pages)."
+  ]
+}

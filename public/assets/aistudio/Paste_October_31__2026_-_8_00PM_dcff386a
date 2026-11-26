@@ -1,0 +1,1013 @@
+# PUNIA ASSOCIATES — COMPLETE WEBSITE TRANSFORMATION MASTER PROMPT
+
+## INDIA'S LEGAL KNOWLEDGE, LEGISLATION, JUDICIAL RESEARCH, CURRENT AFFAIRS AND PROFESSIONAL LAW FIRM WEBSITE
+
+Act as a principal full-stack engineer, legal technology architect, Indian legal researcher, legislative database specialist, judicial research specialist, editorial director, professional website designer, SEO architect, database engineer and cybersecurity specialist.
+
+I own:
+
+https://puniaassociates.site/
+
+Your task is to completely redesign, upgrade and expand this existing application into a premium Indian legal knowledge and research platform while retaining the verified identity of Punia Associates as its publisher and law firm.
+
+The website must combine four major functions:
+
+1. A professional law-firm website.
+2. A comprehensive Indian legal information library.
+3. A Supreme Court and High Court judgments research portal.
+4. A legal learning, current affairs and judicial examination preparation platform.
+
+This is an actual full-stack implementation task.
+
+Do not merely provide a plan, mockup, screenshot, static HTML homepage or nonfunctional prototype.
+
+Inspect the existing application and implement all feasible improvements directly in the current project.
+
+# PART 1 — COMPLETE EXISTING WEBSITE AUDIT
+
+Inspect the complete project before changing anything.
+
+Audit:
+
+- Existing website and public pages.
+- Current UI and design.
+- Logo and branding.
+- Navigation and footer.
+- About and practice areas.
+- Existing lawyer/team information.
+- Contact forms.
+- Existing blogs and publications.
+- Authentication and admin access.
+- Frontend architecture.
+- Backend and APIs.
+- Existing database.
+- Storage and media uploads.
+- SEO and metadata.
+- Deployment and hosting.
+- Existing documents and records.
+- Broken links and nonfunctional features.
+
+Produce an internal technical inventory and preserve legitimate existing data.
+
+Reuse the current frontend framework, backend and database where appropriate.
+
+If Firebase is already configured, extend that project. Do not create duplicate databases or replace working services without a technical reason.
+
+Do not remove authentic content, existing records, or production credentials.
+
+# PART 2 — COMPLETE UI AND BRAND REDESIGN
+
+Completely redesign the website.
+
+The main identity should be:
+
+PUNIA ASSOCIATES
+INDIAN LEGAL KNOWLEDGE & RESEARCH
+
+Suggested tagline:
+
+"Explore the Law. Understand Every Judgment."
+
+The website must look like a combination of a premium legal research platform, a legislative information portal, and a professional Indian law firm.
+
+### Design system
+
+Use:
+
+- Premium editorial typography.
+- White and ivory reading backgrounds.
+- Deep navy and charcoal accents.
+- Subtle gold highlights.
+- Modern legal research cards.
+- Structured document layouts.
+- Beautiful tables and data layouts.
+- Clear headings and breadcrumbs.
+- Professional search interfaces.
+- Elegant navigation menus.
+- Mobile-first responsive design.
+- Optional dark reading mode.
+- Accessible typography.
+- Subtle animations.
+- Optimized document previews.
+
+Do not make the homepage primarily about selling legal services.
+
+The highest visual priority must be the legal library, judgments, legal search, latest updates and learning resources.
+
+Create a professional visual identity, logo placement, favicon, app icon and consistent design components while preserving the existing authentic brand.
+
+# PART 3 — COMPLETE WEBSITE NAVIGATION
+
+Create these main navigation sections:
+
+1. Home.
+2. Bare Acts.
+3. Central Acts.
+4. State Acts.
+5. Union Territory Laws.
+6. Rules & Regulations.
+7. Amendment Tracker.
+8. Supreme Court Judgments.
+9. High Court Judgments.
+10. All Courts Directory.
+11. Latest Judgments.
+12. Latest Court Orders.
+13. Landmark Cases.
+14. Case Law Library.
+15. Short Notes.
+16. Judiciary Preparation.
+17. Legal Current Affairs.
+18. India Current Affairs.
+19. World Current Affairs.
+20. Legal News.
+21. Legal Explainers.
+22. Research Articles.
+23. Legal Publications.
+24. Legal Resources.
+25. About Punia Associates.
+26. Contact.
+
+Implement desktop navigation with suitable dropdowns and a mobile-friendly menu.
+
+All menu destinations must work.
+
+# PART 4 — COMPLETE BARE ACTS LIBRARY
+
+Create the most important section:
+
+INDIA BARE ACTS LIBRARY
+
+The objective is to catalogue all available Indian legislative materials.
+
+Use India Code as the primary legislative source:
+
+https://www.indiacode.nic.in/
+
+Also use:
+
+https://legislative.gov.in/
+https://egazette.gov.in/
+
+Include:
+
+- All available Central Acts.
+- All available State Acts.
+- Union Territory legislation.
+- Rules.
+- Regulations.
+- Subordinate legislation.
+- Notifications.
+- Ordinances.
+- Amendment Acts.
+- Historical laws.
+- Repealed legislation.
+- Constitutional documents.
+- Related statutory instruments.
+
+Do not call a sample database of selected Acts a complete Indian legal library.
+
+Import and maintain the available official legislative catalogue using permitted methods.
+
+### Subject classification
+
+Create a comprehensive subject hierarchy:
+
+**Constitutional Law**
+- Constitution of India.
+- Constitutional Amendment Acts.
+- Schedules.
+- Constitutional legislation.
+
+**Criminal Law**
+- BNS 2023.
+- BNSS 2023.
+- BSA 2023.
+- IPC.
+- CrPC.
+- Indian Evidence Act.
+- Special criminal laws.
+- Prevention of Corruption legislation.
+- Other special and local laws.
+
+**Civil and Procedural Law**
+- CPC.
+- Limitation Act.
+- Specific Relief Act.
+- Transfer of Property Act.
+- Registration Act.
+- Other civil statutes.
+
+**Contract and Commercial Law**
+- Indian Contract Act.
+- Sale of Goods Act.
+- Partnership Act.
+- Companies Act.
+- Negotiable Instruments Act.
+- Arbitration and Conciliation Act.
+- Insolvency and Bankruptcy Code.
+- Competition Act.
+- Consumer Protection Act.
+
+**Family Law**
+- Hindu Marriage Act.
+- Hindu Succession Act.
+- Special Marriage Act.
+- Domestic Violence Act.
+- Adoption and Guardianship laws.
+- Maintenance legislation.
+- Succession laws.
+
+**Property and Land**
+- Real Estate Regulation Act.
+- Land acquisition legislation.
+- State land laws.
+- Rent control legislation.
+- Registration and property laws.
+
+**Taxation**
+- Income-tax legislation.
+- GST Acts.
+- Customs.
+- Other tax-related legislation.
+
+**Labour and Employment**
+- Labour Codes.
+- Industrial relations.
+- Social security.
+- Occupational safety.
+- State labour legislation.
+
+Additional categories:
+- Cyber Law.
+- Technology.
+- Banking.
+- Insurance.
+- Environment.
+- Education.
+- Intellectual Property.
+- Motor Vehicles.
+- Public Administration.
+- Election Laws.
+- Electricity.
+- Other regulatory laws.
+
+Administrators must be able to create further categories and subcategories.
+
+# PART 5 — ADVANCED BARE ACT READING SYSTEM
+
+Every available Act should have a dedicated, searchable URL.
+
+Display:
+
+- Full Act name.
+- Short title.
+- Act number.
+- Year.
+- Enactment date.
+- Commencement date.
+- Ministry.
+- Jurisdiction.
+- Current legal status.
+- Amendment history.
+- Chapter list.
+- Section list.
+- Schedules.
+- Rules and regulations.
+- Official source URL.
+- Official PDF.
+- Last verified date.
+
+Implement three reading modes:
+
+1. Complete Act.
+2. Section-by-section reader.
+3. Official PDF.
+
+Provide:
+
+- Search within Act.
+- Chapter navigation.
+- Previous and next section.
+- Copy section.
+- Print.
+- Download.
+- Related judgments.
+- Related short notes.
+- Amendment history.
+
+Preserve statutory language exactly in the statutory document viewer.
+
+Clearly distinguish original legislation from our own explanations.
+
+Show whether an Act or a particular version is in force, repealed, historical, amended or subject to a commencement notification.
+
+Never invent statutory wording or claim that an amendment is in force without checking its applicable commencement provisions.
+
+# PART 6 — FREE PUBLIC LEGAL DOCUMENT ACCESS
+
+Public visitors must be able to read and download legally available Bare Acts and published study notes without account registration.
+
+Allow:
+
+- Free PDF download.
+- Online reading.
+- Printing.
+- Official-source opening.
+- Section copying.
+- Related note access.
+
+When redistribution is permitted, store copies in secure file storage.
+
+When permissions are unclear or rehosting is not permitted, provide an official external download link.
+
+Preserve source attribution, version, retrieval date, publication date and file information.
+
+Do not publish modified statutory text as an official copy.
+
+# PART 7 — COMPLETE SUPREME COURT JUDGMENTS DIRECTORY
+
+Create a dedicated Supreme Court section.
+
+Official sources:
+
+https://www.sci.gov.in/
+https://scr.sci.gov.in/scrsearch/
+
+Build a searchable directory of available Supreme Court judgments.
+
+Search by:
+
+- Case title.
+- Petitioner.
+- Respondent.
+- Case number.
+- Diary number.
+- Citation.
+- Neutral citation.
+- Judge.
+- Bench.
+- Decision date.
+- Legal subject.
+- Statute.
+- Section.
+- Keywords.
+- Legal issues.
+
+Include:
+
+- Latest decisions.
+- Landmark judgments.
+- Constitution Bench decisions.
+- Civil decisions.
+- Criminal decisions.
+- Constitutional cases.
+- Tax and commercial cases.
+- Family law.
+- Service matters.
+- Administrative law.
+
+Every individual judgment page should include verified metadata, factual background, legal issues, reasoning, result, relevant paragraphs, legal principles and official document access.
+
+Distinguish ratio decidendi, obiter dicta, interim directions and final holdings.
+
+Record subsequent judicial treatment only when verified through reliable sources.
+
+# PART 8 — ALL 25 HIGH COURTS DIRECTORY
+
+Create a complete High Court directory with individual pages for all 25 Indian High Courts.
+
+1. Allahabad.
+2. Andhra Pradesh.
+3. Bombay.
+4. Calcutta.
+5. Chhattisgarh.
+6. Delhi.
+7. Gauhati.
+8. Gujarat.
+9. Himachal Pradesh.
+10. Jammu and Kashmir and Ladakh.
+11. Jharkhand.
+12. Karnataka.
+13. Kerala.
+14. Madhya Pradesh.
+15. Madras.
+16. Manipur.
+17. Meghalaya.
+18. Orissa.
+19. Patna.
+20. Punjab and Haryana.
+21. Rajasthan.
+22. Sikkim.
+23. Telangana.
+24. Tripura.
+25. Uttarakhand.
+
+Use current official court names and verified bench information.
+
+Each court page should include:
+
+- Court identity.
+- Official website.
+- Principal seat.
+- Official benches.
+- Jurisdiction.
+- Judgment search.
+- Latest available judgments.
+- Latest available orders.
+- Cause lists.
+- Official case-search links.
+- Data coverage status.
+- Last verified date.
+
+Use official eCourts services and individual High Court websites.
+
+https://hcservices.ecourts.gov.in/
+https://judgments.ecourts.gov.in/
+
+Where legally permitted, supplement with the Indian High Court Judgments Open Data dataset:
+
+https://registry.opendata.aws/indian-high-court-judgments/
+
+The dataset covers 25 High Courts and provides a useful historical research corpus, but its update cycle must not be misrepresented as real-time.
+
+Never bypass CAPTCHA or access controls.
+
+Where an official court has no permitted automated feed, use its official search link and provide manual document import through the admin panel.
+
+Never claim complete judgment coverage if the underlying source data is incomplete.
+
+# PART 9 — UNIFIED CASE LAW RESEARCH ENGINE
+
+Build one search engine for Supreme Court and High Court case law.
+
+Enable:
+
+- Exact citation search.
+- Phrase search.
+- Full-text search where available.
+- Case number search.
+- Court filters.
+- Judge filters.
+- Subject filters.
+- Statute and section filters.
+- Year and date ranges.
+- Related case discovery.
+- Judgment outcome search where reliable metadata supports it.
+
+Each judgment page must link to:
+
+- Relevant Bare Acts.
+- Relevant statutory sections.
+- Related judgments.
+- Our short notes.
+- Case briefs.
+- Research articles.
+- Legislative updates.
+
+Do not automatically equate keyword similarity with precedential authority.
+
+Clearly label each record's court and judicial status.
+
+# PART 10 — SHORT NOTES AND JUDICIARY STUDY LIBRARY
+
+Build:
+
+PUNIA ASSOCIATES — SHORT NOTES & STUDY CENTRE
+
+The admin must be able to create, edit, organise and publish short notes.
+
+Categories include:
+
+- Constitutional Law.
+- BNS.
+- BNSS.
+- BSA.
+- CPC.
+- IPC.
+- CrPC.
+- Indian Evidence Act.
+- Jurisprudence.
+- Contract.
+- Property.
+- Family Law.
+- Administrative Law.
+- Company Law.
+- Labour Law.
+- Taxation.
+- Limitation.
+- Arbitration.
+- Other legal subjects.
+
+Every note may include:
+
+- Title.
+- Topic.
+- Act.
+- Section.
+- Introduction.
+- Definition.
+- Essential ingredients.
+- Explanations.
+- Exceptions.
+- Provisos.
+- Illustrations.
+- Important case laws.
+- Legal principles.
+- Distinctions.
+- Examples.
+- Exam-oriented revision points.
+- References.
+- Author.
+- Date updated.
+
+Create a professional rich-text editor supporting:
+- Tables.
+- Images.
+- Headings.
+- Bullets.
+- Numbering.
+- Citations.
+- PDF export.
+- Printing.
+- Drafts.
+- Preview.
+- Publishing.
+- Archiving.
+- Version history.
+
+Public users must be able to access published notes for free.
+
+Link every note to its relevant Bare Act and cases.
+
+# PART 11 — CASE BRIEFS AND LANDMARK CASE STUDIES
+
+Create a dedicated research library.
+
+For each case brief, provide:
+
+1. Case name.
+2. Court.
+3. Citation.
+4. Decision date.
+5. Facts.
+6. Legal issues.
+7. Arguments where available.
+8. Court reasoning.
+9. Ratio decidendi.
+10. Obiter dicta.
+11. Final holding.
+12. Relevant paragraphs.
+13. Statutory provisions.
+14. Related precedents.
+15. Subsequent treatment.
+16. Researcher's notes.
+
+Allow admins to prepare and publish their own case briefs.
+
+Do not present explanatory research as an official judicial document.
+
+# PART 12 — CURRENT AFFAIRS AND LEGAL NEWS
+
+Create separate sections:
+
+**Legal Current Affairs**
+- Supreme Court developments.
+- High Court developments.
+- Important judgments.
+- Legislative developments.
+- New Acts.
+- Amendments.
+- Gazette notifications.
+- Legal appointments.
+- Regulatory updates.
+- Bar and judicial institutions.
+- Important tribunal decisions.
+- Constitutional developments.
+
+**India Current Affairs**
+- Governance.
+- Government policies.
+- Economy.
+- Science and technology.
+- Environment.
+- Education.
+- International relations.
+- Important national developments.
+- Social and public administration developments.
+
+**World Current Affairs**
+- International affairs.
+- Geopolitics.
+- Global institutions.
+- International law.
+- Global economy.
+- Science.
+- Technology.
+- Environment.
+
+Every current-affairs item must show:
+- Headline.
+- Summary.
+- Event date.
+- Publication date.
+- Original source.
+- Official document where applicable.
+- Related law or judgment.
+- Last updated date.
+
+Never present old events as today's news.
+
+Clearly distinguish news reporting, government announcements, analysis and opinions.
+
+Prioritise primary sources such as official courts, India Code, e-Gazette, government departments and PIB.
+
+Use news agencies and publications as attributed secondary sources.
+
+Respect copyright. Do not reproduce full third-party news articles.
+
+# PART 13 — LEGAL ARTICLES AND RESEARCH
+
+Create a rich legal publishing section.
+
+Support:
+
+- Constitutional research.
+- Criminal law analysis.
+- Civil law.
+- Evidence and procedure.
+- Family law.
+- Property disputes.
+- Corporate law.
+- Arbitration.
+- Tax.
+- Labour.
+- Cyber law.
+- Comparative law.
+- International law.
+- Judicial developments.
+- Legislative commentary.
+- Practical legal explainers.
+
+Each article must support:
+- Author.
+- Title.
+- Summary.
+- Full article.
+- Citations.
+- Footnotes.
+- References.
+- Related cases.
+- Related statutory provisions.
+- Category.
+- Tags.
+- Publication date.
+- Revision history.
+
+# PART 14 — ADMIN DASHBOARD AND CONTENT MANAGEMENT
+
+Create a protected admin CMS with secure provisioning and no publicly hardcoded passwords.
+
+Roles:
+- Super Admin.
+- Admin.
+- Legal Researcher.
+- Legal Editor.
+- Notes Creator.
+- News Editor.
+- Reviewer.
+- Read-only User.
+
+Dashboard modules:
+
+1. Overview.
+2. Bare Acts.
+3. Central Acts.
+4. State Acts.
+5. UT Legislation.
+6. Rules and Regulations.
+7. Amendments.
+8. Supreme Court Judgments.
+9. High Court Directory.
+10. Court Orders.
+11. Case Law Library.
+12. Short Notes.
+13. Case Briefs.
+14. Legal News.
+15. India Current Affairs.
+16. World Current Affairs.
+17. Legal Research.
+18. Article Publishing.
+19. Source Manager.
+20. PDF Library.
+21. Media Library.
+22. Category Management.
+23. Author Management.
+24. Scheduled Publishing.
+25. Review Queue.
+26. Corrections and Retractions.
+27. Homepage Manager.
+28. SEO Dashboard.
+29. Sitemap and Indexing.
+30. User and Role Management.
+31. Audit Logs.
+32. Database and Import Status.
+33. Website Configuration.
+
+I must be able to operate the entire content system from the browser without changing code.
+
+# PART 15 — DAILY EDITORIAL AUTOMATION
+
+Build a source monitoring system for permitted public sources.
+
+Monitor, where technically and legally supported:
+
+- India Code.
+- Legislative Department.
+- e-Gazette.
+- Supreme Court.
+- e-SCR.
+- High Court websites.
+- eCourts.
+- PIB.
+- Other authorized government sources.
+
+Create an editorial inbox:
+
+- New Records.
+- Pending Verification.
+- New Judgments.
+- New Orders.
+- Legislative Updates.
+- News Developments.
+- Draft Summaries.
+- Published Updates.
+- Failed Imports.
+- Duplicate Records.
+
+AI may prepare initial summaries and article drafts from verified source material, but must not automatically publish unverified legal information.
+
+Require human review.
+
+Maintain source URL, document retrieval date and verification timestamp.
+
+If an automatic feed is unavailable, provide manual import and editing instead of pretending live synchronization exists.
+
+# PART 16 — SEO AND GOOGLE SEARCH OPTIMIZATION
+
+Build comprehensive technical, on-page, editorial and structured-data SEO.
+
+Do not use keyword stuffing, duplicate pages, fabricated author identities, artificial backlinks or mass-generated thin articles.
+
+Implement the following:
+
+## A. Technical SEO
+
+- Server-side rendering or static generation for public legal content where supported.
+- Fast page delivery.
+- Crawlable HTML links.
+- Clean URL structure.
+- Correct HTTP status codes.
+- Canonical URLs.
+- Robots.txt.
+- XML sitemap index.
+- Individual sitemaps for Bare Acts, judgments, articles, news and notes.
+- Pagination handling.
+- Redirect management.
+- Noindex for private and admin pages.
+- Proper 404 and 410 responses.
+- HTTPS.
+- Mobile-responsive design.
+- Image compression and next-generation formats.
+- Lazy loading.
+- Core Web Vitals monitoring.
+- JavaScript rendering checks.
+- Search-console verification support.
+
+Only include canonical, published and indexable URLs in public sitemaps.
+
+Use accurate dateModified values. Do not update timestamps simply to make old articles appear fresh.
+
+## B. On-Page SEO
+
+Every important page must have:
+
+- Unique title tag.
+- Unique meta description.
+- One descriptive H1.
+- Logical H2 and H3 sections.
+- Descriptive URL slug.
+- Canonical URL.
+- Relevant internal links.
+- Helpful image alt text.
+- Breadcrumb navigation.
+- Relevant source references.
+- Clear publication and update dates.
+- Proper pagination and related content.
+
+Avoid repeating the same title and meta description across thousands of pages.
+
+## C. Structured data
+
+Implement relevant, valid Schema.org JSON-LD where applicable:
+
+- Organization.
+- WebSite.
+- WebPage.
+- Article.
+- NewsArticle.
+- BlogPosting.
+- Person for genuine authors.
+- BreadcrumbList.
+- Dataset where relevant.
+- DefinedTerm where appropriate.
+- Other suitable supported types.
+
+Structured data must accurately represent visible page content.
+
+Do not add fake reviews, ratings, authors or unsupported FAQ markup.
+
+Validate using Google's Rich Results Test and Schema Markup Validator.
+
+## D. Search indexing
+
+Prepare the website for Google Search Console.
+
+Support:
+- Domain verification instructions.
+- Sitemap submission.
+- URL inspection.
+- Index coverage monitoring.
+- Crawl error reporting.
+- Mobile usability checks.
+- Performance monitoring.
+- Manual action notifications.
+- Search performance reporting.
+
+Also document Bing Webmaster Tools setup.
+
+Do not claim that a page has been indexed simply because it appears in a sitemap.
+
+Do not guarantee top positions. Build for long-term organic search quality and measure the actual results.
+
+## E. Internal linking strategy
+
+Create strong relationships between:
+
+- Bare Act pages.
+- Individual sections.
+- Amendments.
+- Supreme Court judgments.
+- High Court judgments.
+- Short notes.
+- Case briefs.
+- Articles.
+- Current-affairs updates.
+
+Every relevant resource should help visitors continue their legal research.
+
+Avoid orphan pages and broken internal links.
+
+# PART 17 — PROFESSIONAL CONDUCT, COPYRIGHT AND TRUST
+
+Verify website content against current applicable Bar Council of India rules, including Rule 36, and other professional requirements.
+
+Keep Punia Associates' identity and professional particulars factual.
+
+Do not publish misleading advertisements, unsupported claims, guaranteed legal results, inappropriate testimonials or promotional claims that violate professional standards.
+
+The legal knowledge library must distinguish:
+- Official law.
+- Official judicial text.
+- Editorial summary.
+- Original short note.
+- Research analysis.
+- News reporting.
+- Opinion.
+
+Use proper source attribution.
+
+Respect the copyright and licensing terms of third-party materials.
+
+Create clearly visible terms, privacy and legal-information disclaimers.
+
+# PART 18 — DATABASE AND STORAGE
+
+Audit and extend the existing database.
+
+Use appropriate records for:
+
+- users
+- roles
+- courts
+- benches
+- judges
+- legislation
+- actVersions
+- chapters
+- sections
+- schedules
+- stateActs
+- utActs
+- subordinateLegislation
+- amendments
+- gazetteNotifications
+- judgments
+- orders
+- citations
+- subsequentTreatment
+- shortNotes
+- caseBriefs
+- legalArticles
+- currentAffairs
+- legalNews
+- researchPapers
+- categories
+- authors
+- sources
+- sourceDocuments
+- mediaAssets
+- imports
+- syncLogs
+- editorialDrafts
+- reviews
+- corrections
+- publicationHistory
+- auditEvents
+- siteSettings
+
+Use stable identifiers, proper indexing, timestamps, validation and relationships.
+
+Separate original legal documents from editorial content.
+
+Store PDFs and images in secure object storage.
+
+Preserve backups and provide migration instructions.
+
+# PART 19 — FINAL TESTING
+
+Run the actual build, lint, type checks and available tests.
+
+Verify:
+
+1. The new homepage works on desktop and mobile.
+2. All navigation pages work.
+3. Central, State and UT Acts can be searched.
+4. Available Bare Acts can be read and downloaded without login.
+5. Act section navigation works.
+6. Amendment status is displayed accurately.
+7. Supreme Court judgments are searchable.
+8. All 25 High Courts are represented.
+9. High Court official search links work.
+10. Available judgment records open properly.
+11. Short notes can be created, edited and published.
+12. Notes can be exported as PDFs.
+13. Case briefs can be linked to judgments.
+14. Legal news is separated from general current affairs.
+15. Source citations are visible.
+16. Drafts are not publicly indexable.
+17. Search and filters use actual data.
+18. Sitemaps include only eligible URLs.
+19. Structured data validates.
+20. User and admin access controls work.
+21. No fabricated legal records appear.
+22. No major broken buttons or links remain.
+
+Do not claim a test passed unless it was executed.
+
+# PART 20 — IMPLEMENTATION SEQUENCE
+
+Phase 1: Audit and completely redesign the existing website.
+
+Phase 2: Build Bare Acts and complete legislative cataloguing.
+
+Phase 3: Build public PDF downloads and section-wise Act reader.
+
+Phase 4: Build Supreme Court and all High Court directory.
+
+Phase 5: Build unified judgments and judicial search.
+
+Phase 6: Build short notes, case briefs and judiciary study centre.
+
+Phase 7: Build legal current affairs, legal news and research articles.
+
+Phase 8: Build the full admin CMS, source manager and daily update system.
+
+Phase 9: Complete database security, SEO and Search Console readiness.
+
+Phase 10: Test and prepare deployment.
+
+Do not stop after a homepage or sample records.
+
+# FINAL RESULT
+
+Deliver a premium Punia Associates website that provides a powerful and accurate legal research and learning experience.
+
+The majority of the platform's value must come from the Bare Acts, court judgments, legal notes, current legal developments, current affairs, and research material.
+
+Every public legal document must have a trustworthy source.
+
+The admin panel must make it easy to maintain, correct and publish content daily.
+
+Provide the actual implementation report, files changed, data integrations, missing external permissions, tests executed and remaining limitations.
+
+Build the working platform, not a static mockup.

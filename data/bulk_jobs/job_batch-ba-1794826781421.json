@@ -1,0 +1,44 @@
+{
+  "jobId": "batch-ba-1794826781421",
+  "jobName": "The_Actuaries_Act_2006.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "The_Actuaries_Act_2006.pdf",
+  "archiveSizeBytes": 391324,
+  "createdAt": "16 Nov 2026, 4:29 pm",
+  "updatedAt": "16 Nov 2026, 4:29 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 22,
+  "totalArchiveSizeBytes": 391324,
+  "items": [
+    {
+      "id": "item-1794826781378-wxp8w",
+      "originalFileName": "The_Actuaries_Act_2006.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_actuaries_act_2006_978aaafe.pdf",
+      "fileSizeBytes": 391324,
+      "checksumSha256": "978aaafe26e129f82e0e1f528ad237e1f6733ac8d92f18d14d55171b711dea9d",
+      "pageCount": 22,
+      "extractedTextExcerpt": "PUNIA ASSOCIATES LEGAL RESEARCH LIBRARY LEGISLATION & LEGAL REFERENCE SERIES The Actuaries Act, 2006 CENTRAL ACT • PROFESSIONAL REGULATION Private legal reference copy Prepared for digital legal research and reference. DOCUMENT PROVENANCE & STATUS The statutory/document text is reproduced from the source PDF supplied for this task. Punia Associates is identified only as the private legal-library compiler/custodian; it is not the author, legislature, Government publisher or certifying authority for the underlying document. SOURCE EDITION / VERIFICATION NOTE Source version supplied; amendment/current-status verification not performed. Not an official or certified government publication. Verify the current official text before legal reliance. PUNIA ASSOCIATES | PRIVATE READER COPY Library compilation date: 14 November 2026 -- 1 of 22 -- 1 THE ACTUARIES ACT, 2006 __________________ ARRANGEMENT OF SECTIONS __________________ CHAPTER I PRELIMINARY SECTIONS 1. Short title, extent and commencement. 2. Definitions. CHAPTER II INSTITUTE OF ACTUARIES OF INDIA 3. Incorporation of Institute. 4. Transfer of assets, liabilities, etc., of Actuarial Society. 5. Objects of Institute. 6. Entry of names in register. 7. Associates and fellows. 8. Honorary, affiliate and student members. 9. Certificate of practice. 10. Members to be known as Actuaries. 11. Disqualifications. 12. Composition of Council of Institute. 13. Annual general meetings. 14. Re-election to Council. 15. Settlement of disput",
+      "detectedTitle": "The Actuaries Act, 2006",
+      "actNumber": "Act of Parliament (2006)",
+      "year": 2006,
+      "jurisdiction": "Central",
+      "category": "Commercial & Corporate",
+      "preamble": "An Act to consolidate, amend, and give effect to statutory provisions regarding The Actuaries Act, 2006.",
+      "validationStatus": "VALID",
+      "validationMessage": "Updates existing repository entry \"The Actuaries Act, 2006\" with full 22-page official PDF.",
+      "isDuplicate": false,
+      "duplicateActTitle": "The Actuaries Act, 2006",
+      "manifestMatched": false,
+      "confidenceScore": 97
+    }
+  ],
+  "logs": [
+    "[16 Nov 2026, 4:29 pm] Chunked upload & PDF optimization finalized for \"The_Actuaries_Act_2006.pdf\" (22 pages)."
+  ]
+}

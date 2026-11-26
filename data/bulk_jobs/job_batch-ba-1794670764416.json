@@ -1,0 +1,46 @@
+{
+  "jobId": "batch-ba-1794670764416",
+  "jobName": "test_dup.zip",
+  "batchType": "ZIP_ARCHIVE",
+  "archiveFileName": "test_dup.zip",
+  "archiveSizeBytes": 599,
+  "createdAt": "14 Nov 2026, 9:09 pm",
+  "updatedAt": "14 Nov 2026, 9:09 pm",
+  "status": "PREVIEW_READY",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 0,
+  "duplicateFiles": 1,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 1,
+  "totalArchiveSizeBytes": 599,
+  "items": [
+    {
+      "id": "item-1794670764417-fvpns",
+      "originalFileName": "THE_ENVIRONMENT_PROTECTION_ACT_1986.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_environment_protection_act_1986_a4fc05c7.pdf",
+      "fileSizeBytes": 788,
+      "checksumSha256": "a4fc05c7aae36f22fb18461b1a3f31293ddcb59e1ba8b1539a0f7f3eeff67ed6",
+      "pageCount": 1,
+      "extractedTextExcerpt": "THE ENVIRONMENT PROTECTION ACT 1986 ACT NO. 29 OF 1986 An Act to provide for the protection and improvement of environment and for matt ers connected therewith. -- 1 of 1 --",
+      "detectedTitle": "THE ENVIRONMENT PROTECTION ACT 1986",
+      "actNumber": "Act No. 29 of 1986",
+      "year": 1986,
+      "jurisdiction": "Central",
+      "category": "Special & Local Laws",
+      "preamble": "An Act to provide for the protection and improvement of environment and for matt ers connected therewith.",
+      "validationStatus": "DUPLICATE",
+      "validationMessage": "Duplicate detected: Matches existing repository Act \"The Environment (Protection) Act 1986\" (ID: act-the-environment-protection-act-1986-1986-a4fc05).",
+      "isDuplicate": true,
+      "duplicateActTitle": "The Environment (Protection) Act 1986",
+      "manifestMatched": false,
+      "confidenceScore": 92
+    }
+  ],
+  "logs": [
+    "[14 Nov 2026, 9:09 pm] Received ZIP archive \"test_dup.zip\" (1 KB).",
+    "Discovered 1 entries inside ZIP archive.",
+    "Processed \"THE_ENVIRONMENT_PROTECTION_ACT_1986.pdf\" -> Status: DUPLICATE (Act: THE ENVIRONMENT PROTECTION ACT 1986)"
+  ]
+}

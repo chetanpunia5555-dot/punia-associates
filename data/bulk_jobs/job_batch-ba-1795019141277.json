@@ -1,0 +1,43 @@
+{
+  "jobId": "batch-ba-1795019141277",
+  "jobName": "The_Guardians_and_Wards_Act_1890_Punia_Associates_Reader_Edition.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "The_Guardians_and_Wards_Act_1890_Punia_Associates_Reader_Edition.pdf",
+  "archiveSizeBytes": 98742,
+  "createdAt": "18 Nov 2026, 9:55 pm",
+  "updatedAt": "18 Nov 2026, 9:55 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 16,
+  "totalArchiveSizeBytes": 98742,
+  "items": [
+    {
+      "id": "item-1795019141117-vcoel",
+      "originalFileName": "The_Guardians_and_Wards_Act_1890_Punia_Associates_Reader_Edition.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_guardians_and_wards_act_1890_punia_associate_62c7c5b5.pdf",
+      "fileSizeBytes": 98742,
+      "checksumSha256": "62c7c5b5e0eb50cdf86f1c7eaa65b4a378dfa044892f5fff9430bf3ea65a5c6c",
+      "pageCount": 16,
+      "extractedTextExcerpt": "PUNIA ASSOCIATES • PRIVATE READER COPY 1 PUNIA ASSOCIATES INDIAN LEGAL READER SERIES STATUTORY TEXT The Guardians and Wards Act, 1890 ACT NO. 8 OF 1890 Central family and guardianship legislation MODERN PROFESSIONAL READER EDITION A carefully typeset private reader copy prepared for legal study and reference. SOURCE AND USE NOTE This edition is based on the PDF supplied for formatting. Typography, spacing, hierarchy and pagination have been redesigned; the statutory wording has not intentionally been amended. This is a private reader edition, not an official Government publication, certified copy, legal opinion or assurance that all later amendments and commencement notifications are incorporated. Before relying on any provision, verify the latest applicable text and notifications from the official Gazette and India Code. Source file: THE GUARDIANS AND WARDS ACT, 1890 (1).pdf Source PDF pages: 17 Reader edition prepared: 14 November 2026 PUNIA ASSOCIATES • LEGAL RESEARCH LIBRARY -- 1 of 16 -- PUNIA ASSOCIATES | LEGAL READER EDITION The Guardians and Wards Act, 1890 PUNIA ASSOCIATES • PRIVATE READER COPY 2 ARRANGEMENT OF SECTIONS CHAPTER I PRELIMINARY SECTIONS 1. Title, extent and commencement. 2. [Repealed.]. 3. Saving of jurisdiction of Courts of Wards and Chartered High Courts. 4. Definitions. 4A. Power to confer jurisdiction on subordinate judicial officers and to transfer proceedings to such officers. CHAPTER II APPOINTMENT AND DECLARATION OF GUARDIANS 5. [Omitted.]. 6.",
+      "detectedTitle": "The Guardians and Wards Act 1890 Punia Associates Reader Edition",
+      "actNumber": "Act No. 8 of 1890",
+      "year": 1890,
+      "jurisdiction": "Central",
+      "category": "Family & Personal",
+      "preamble": "An Act to consolidate, amend, and give effect to statutory provisions regarding The Guardians and Wards Act 1890 Punia Associates Reader Edition.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (16 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 93
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 9:55 pm] Chunked upload & PDF optimization finalized for \"The_Guardians_and_Wards_Act_1890_Punia_Associates_Reader_Edition.pdf\" (16 pages)."
+  ]
+}

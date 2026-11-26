@@ -1,0 +1,43 @@
+{
+  "jobId": "batch-ba-1795019141960",
+  "jobName": "The_Foreign_Marriage_Act_1969_Punia_Associates_Reader_Edition.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "The_Foreign_Marriage_Act_1969_Punia_Associates_Reader_Edition.pdf",
+  "archiveSizeBytes": 83842,
+  "createdAt": "18 Nov 2026, 9:55 pm",
+  "updatedAt": "18 Nov 2026, 9:55 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 12,
+  "totalArchiveSizeBytes": 83842,
+  "items": [
+    {
+      "id": "item-1795019141871-juseg",
+      "originalFileName": "The_Foreign_Marriage_Act_1969_Punia_Associates_Reader_Edition.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_foreign_marriage_act_1969_punia_associates_r_6eeaf960.pdf",
+      "fileSizeBytes": 83842,
+      "checksumSha256": "6eeaf96019610b86dd3f87d824d6bf6b5fe179f36af3085e321f84b58a1f81b3",
+      "pageCount": 12,
+      "extractedTextExcerpt": "PUNIA ASSOCIATES • PRIVATE READER COPY 1 PUNIA ASSOCIATES INDIAN LEGAL READER SERIES STATUTORY TEXT The Foreign Marriage Act, 1969 ACT NO. 33 OF 1969 Central family legislation MODERN PROFESSIONAL READER EDITION A carefully typeset private reader copy prepared for legal study and reference. LEGAL STATUS / VERSION ALERT The uploaded filename contains a spelling error. The Act title is shown as “Foreign Marriage Act, 1969”, consistent with the title page within the supplied PDF. Other statutory text is carried over from the supplied source. SOURCE AND USE NOTE This edition is based on the PDF supplied for formatting. Typography, spacing, hierarchy and pagination have been redesigned; the statutory wording has not intentionally been amended. This is a private reader edition, not an official Government publication, certified copy, legal opinion or assurance that all later amendments and commencement notifications are incorporated. Before relying on any provision, verify the latest applicable text and notifications from the official Gazette and India Code. Source file: THE FOREIGN MARRIEGE ACT, 1969 (1).pdf Source PDF pages: 13 Reader edition prepared: 14 November 2026 PUNIA ASSOCIATES • LEGAL RESEARCH LIBRARY -- 1 of 12 -- PUNIA ASSOCIATES | LEGAL READER EDITION The Foreign Marriage Act, 1969 PUNIA ASSOCIATES • PRIVATE READER COPY 2 THE FOREIGN MARRIEGE ACT, 1969 ARRANGEMENT OF SECTONS CHAPTER I PRELIMINARY SECTIONS 1. Short title. 2. Definitions. 3. Marriage Officers. CHAPER I",
+      "detectedTitle": "The Foreign Marriage Act 1969 Punia Associates Reader Edition",
+      "actNumber": "Act No. 33 of 1969",
+      "year": 1969,
+      "jurisdiction": "Central",
+      "category": "Family & Personal",
+      "preamble": "An Act to make provision relating to marriages of citizens of India outside India.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (12 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 93
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 9:55 pm] Chunked upload & PDF optimization finalized for \"The_Foreign_Marriage_Act_1969_Punia_Associates_Reader_Edition.pdf\" (12 pages)."
+  ]
+}

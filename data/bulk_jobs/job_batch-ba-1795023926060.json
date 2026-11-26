@@ -1,0 +1,43 @@
+{
+  "jobId": "batch-ba-1795023926060",
+  "jobName": "The_Commercial_Courts_Act_2015.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "The_Commercial_Courts_Act_2015.pdf",
+  "archiveSizeBytes": 1902,
+  "createdAt": "18 Nov 2026, 11:15 pm",
+  "updatedAt": "18 Nov 2026, 11:15 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 5,
+  "totalArchiveSizeBytes": 1902,
+  "items": [
+    {
+      "id": "item-1795023925975-sb7q3",
+      "originalFileName": "The_Commercial_Courts_Act_2015.pdf",
+      "storedPdfUrl": "/bare-acts/stored/the_commercial_courts_act_2015_7dcc2fe4.pdf",
+      "fileSizeBytes": 1902,
+      "checksumSha256": "7dcc2fe432626d32c4a93e03ef1b9f76ede215b917f2f734d0cc3bf1cff3de91",
+      "pageCount": 5,
+      "extractedTextExcerpt": "Official Test Statute Page 1 for Punia Associates Repository -- 1 of 5 -- Official Test Statute Page 2 for Punia Associates Repository -- 2 of 5 -- Official Test Statute Page 3 for Punia Associates Repository -- 3 of 5 --",
+      "detectedTitle": "The Commercial Courts Act, 2015",
+      "actNumber": "Act of Parliament (2015)",
+      "year": 2015,
+      "jurisdiction": "Central",
+      "category": "Special & Local Laws",
+      "preamble": "An Act to consolidate, amend, and give effect to statutory provisions regarding The Commercial Courts Act, 2015.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (5 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 93
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 11:15 pm] Chunked upload & PDF optimization finalized for \"The_Commercial_Courts_Act_2015.pdf\" (5 pages)."
+  ]
+}

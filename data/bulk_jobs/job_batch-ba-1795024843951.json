@@ -1,0 +1,44 @@
+{
+  "jobId": "batch-ba-1795024843951",
+  "jobName": "BSA_1800_Advocacy_Oriented_Prelims_MCQs_English.pdf",
+  "batchType": "MULTIPLE_PDFS",
+  "archiveFileName": "BSA_1800_Advocacy_Oriented_Prelims_MCQs_English.pdf",
+  "archiveSizeBytes": 4569706,
+  "createdAt": "18 Nov 2026, 11:30 pm",
+  "updatedAt": "18 Nov 2026, 11:30 pm",
+  "status": "COMPLETED",
+  "totalFilesFound": 1,
+  "totalPdfsFound": 1,
+  "successfulPdfValidations": 1,
+  "duplicateFiles": 0,
+  "invalidPdfs": 0,
+  "metadataReviewRequiredCount": 0,
+  "totalPdfPages": 1812,
+  "totalArchiveSizeBytes": 4569706,
+  "items": [
+    {
+      "id": "item-1795024843599-ncvy9",
+      "originalFileName": "BSA_1800_Advocacy_Oriented_Prelims_MCQs_English.pdf",
+      "storedPdfUrl": "/bare-acts/stored/bsa_1800_advocacy_oriented_prelims_mcqs_english_aff09d9c.pdf",
+      "fileSizeBytes": 4569706,
+      "checksumSha256": "aff09d9c0cc97bdb9055f7f01398cc04b5be87bdc3b49ed75e761219db7754ae",
+      "pageCount": 1812,
+      "extractedTextExcerpt": "BHARATIYA SAKSHYA ADHINIYAM, 2023 1,800 ADVOCACY-ORIENTED JUDICIARY PRELIMS MCQs Section-pure statement questions with statutory answer, individual explanations and case-law relevance Questions 1,800 Coverage All 170 sections, Sections 1-170 Format Four statements; count the correct statements Answer format Correct option + statement-wise explanation Bare Act support Section-specific statutory anchor and faithful explanation Advocacy component Related case law, issue decided and practical use in court Language English Research cut-off 10 November 2026 Important accuracy note. This is a study book, not a substitute for the enacted Bare Act or full judgments. The statutory rules are explained in plain English and short anchors are paraphrased unless quotation marks identify an exact phrase. Most cited Supreme Court authorities were decided under the Indian Evidence Act, 1872; they are identified as legacy authorities and are relevant to BSA provisions only to the extent the text and legal issue carry forward. Where the BSA materially changed the text, the book flags the change instead of assuming automatic equivalence. Prepared for advocacy-focused learning: admissibility, foundations, objections, examination, cross-examination, burdens and appellate preservation. -- 1 of 1812 -- BSA 2023 | ADVOCACY-ORIENTED PRELIMS QUESTION BANK 1800 section-pure statement MCQs Study paraphrases; verify exact statutory text and complete judgments. Page 2 HOW TO USE THIS BOOK Each MCQ is conf",
+      "detectedTitle": "Bsa 1800 Advocacy Oriented Prelims Mcqs English",
+      "actNumber": "Act No. 47 of 2023",
+      "year": 1800,
+      "jurisdiction": "Central",
+      "category": "Criminal",
+      "preamble": "An Act to consolidate, amend, and give effect to statutory provisions regarding Bsa 1800 Advocacy Oriented Prelims Mcqs English.",
+      "validationStatus": "VALID",
+      "validationMessage": "Valid PDF document (1812 pages). Ready for repository publication.",
+      "isDuplicate": false,
+      "manifestMatched": false,
+      "confidenceScore": 80
+    }
+  ],
+  "logs": [
+    "[18 Nov 2026, 11:30 pm] Chunked upload & PDF optimization finalized for \"BSA_1800_Advocacy_Oriented_Prelims_MCQs_English.pdf\" (1812 pages).",
+    "Updated Bare Act in repository: \"Bsa 1800 Advocacy Oriented Prelims Mcqs English\" (ID: act-bsa-1800-advocacy-oriented-prelims-m-2024-aff09d, PDF: /bare-acts/stored/bsa_1800_advocacy_oriented_prelims_mcqs_english_aff09d9c.pdf)."
+  ]
+}

@@ -1,0 +1,1000 @@
+# PUNIAASSOCIATES
+# COMPLETE AI-POWERED LEGAL KNOWLEDGE, CASE LAW RESEARCH, DOCUMENT INTELLIGENCE, CONTENT INGESTION AND LAW FIRM MANAGEMENT PLATFORM
+
+## MASTER PRODUCT, LEGAL RESEARCH, SOFTWARE ARCHITECTURE AND IMPLEMENTATION SPECIFICATION
+
+### READ AND UNDERSTAND THE COMPLETE SPECIFICATION BEFORE MODIFYING THE PROJECT
+
+You are acting as the principal software architect, senior full-stack engineer, legal technology specialist, AI research engineer, Indian legal research analyst, case-law classification specialist, document intelligence engineer, information security architect and digital knowledge-management architect for my existing law firm website and application, PuniaAssociates.
+
+Your task is to transform the existing PuniaAssociates platform into a comprehensive AI-powered legal knowledge and document management ecosystem.
+
+This is not a request to create a simple legal article uploader or a decorative admin dashboard. I want a complete system that understands legal documents, distinguishes different types of legal materials, extracts legal information, identifies relevant courts and jurisdictions, recognises statutes and sections, classifies judgments by subject and legal principle, associates related legal documents, creates structured legal knowledge records and manages approved public legal content separately from confidential client documents.
+
+The system must be capable of receiving large collections of legal material in a single bulk upload operation. These may include thousands of judgments, Bare Acts, amendment documents, rules, regulations, government notifications, legal research papers, case files, pleadings, contracts, notices, legal articles, lawyer profiles, FAQs and other legal documents.
+
+The administrator should be able to provide files without manually identifying every document, its legal subject, court, statute, section, case number, category or document type. The AI must analyse the uploaded material and determine the appropriate organisation using legal context, document structure, source information and the actual contents.
+
+However, this system must distinguish between public legal knowledge and confidential client matter documents. Client documents must never enter the public website or public search index merely because they have been uploaded to the system.
+
+This is an implementation task. Inspect the actual existing application and implement the working system using the current architecture. Do not merely return a proposal, a list of features or disconnected sample components.
+
+---
+
+# PART 1 — UNDERSTANDING THE EXISTING PUNIAASSOCIATES APPLICATION
+
+## 1. Existing project audit
+
+First inspect the complete existing PuniaAssociates codebase and understand its actual frontend, backend, database, authentication, administration, content structure, article publishing mechanism, document upload mechanism, lawyer profiles, practice-area pages, contact pages, SEO implementation and deployment setup.
+
+The project is an existing law firm website developed through Google AI Studio. Preserve the current website, existing branding, layout, navigation, colour system, typography, public routes and working functionality. Use the exact firm identity already configured in the application. Do not rename the firm or introduce another brand.
+
+Inspect the actual application files, dependencies, Firebase initialisation, Firestore collections, authentication implementation, admin roles, API endpoints, existing database schemas, storage configuration, environment variables and deployment configuration. Determine which capabilities already exist and which must be added.
+
+Do not assume that all Google Cloud or Firebase services are enabled. Verify the actual configuration. Do not invent collection names, service identities, storage buckets or API routes.
+
+If the project currently uses Firestore, Firebase Authentication, Cloud Storage and a Cloud Run backend, integrate with those existing resources where available. If the actual architecture differs, adapt the implementation to what is really present.
+
+The project should continue using its existing hosting and database infrastructure. Do not introduce a VPS, WordPress, another website or a second Firebase project.
+
+Create an implementation plan internally, but do not stop after presenting the plan. Modify the actual project files and complete the working implementation wherever permissions and resources allow.
+
+## 2. The intended transformation
+
+The goal is to transform PuniaAssociates from a conventional law firm website into a well-organised legal knowledge and digital document platform.
+
+The system must have several connected but logically separate areas.
+
+The first area is the Public Legal Knowledge Library, which stores approved legal articles, legal explainers, public case summaries, legislation references, practice-area guides, legal FAQs and other content that has been authorised for public display.
+
+The second area is the Legal Research and Case Law Library, which organises judgments, court orders, statutory provisions, amendments, legal principles, citations and related authorities for authorised legal research.
+
+The third area is the Confidential Client Matter Vault, which stores private client documents, pleadings, agreements, evidence, notices, correspondence and case-related records. This area must have strict permissions and must not be accessible through public routes or the public legal search engine.
+
+The fourth area is the Law Firm Content and Profile Management System, which manages approved lawyer biographies, qualifications, practice areas, office information, legal publications and website content.
+
+The fifth area is the AI Bulk Import and Classification Engine, which connects all appropriate modules and processes large collections of uploaded material.
+
+These areas must work together without mixing public, professional research and confidential client data.
+
+---
+
+# PART 2 — UNIVERSAL BULK DOCUMENT UPLOAD SYSTEM
+
+## 3. A single intelligent upload interface
+
+Create a new administration module named:
+
+**AI Legal Document Intelligence & Bulk Import**
+
+The interface must allow me to upload a large collection of files without manually selecting a category for every document.
+
+Support ZIP packages, multiple PDF documents, DOCX, DOC, TXT, HTML, Markdown, CSV, XLSX, JSON, JSONL, XML, scanned documents, image files and mixed document libraries where technically supported.
+
+A package may contain 1,000 judgments and their citations, 500 Bare Acts and amendment PDFs, 300 research papers, several hundred legal articles and a collection of private case files. The importer must inspect and identify the actual nature of every file instead of treating all documents as the same type.
+
+The system should recognise that a PDF can be a court judgment, a pleading, a notification, a contract, a research paper, a legal notice or an unrelated attachment. It must examine the actual content, headings, court markings, case references, statutory references and document structure.
+
+An administrator should be able to upload a mixed collection and ask the system to analyse everything. The AI should create a complete inventory showing the number of files, probable document types, successfully extracted documents, documents requiring OCR, duplicate files, ambiguous files and documents containing sensitive information.
+
+The upload interface must support drag-and-drop, multiple file selection and ZIP-based batch import. It should preserve file hierarchy and source filenames so that the origin of every resulting record can be traced.
+
+## 4. Multiple upload and ingestion formats
+
+The system must accept structured legal databases as well as ordinary unstructured documents.
+
+JSON, JSONL, CSV and XLSX files should be parsed as structured records. The importer should recognise fields such as case title, citation, court, date, judge, sections, statutory provision, category, author, publication date and source URL.
+
+PDF and DOCX documents should be processed using appropriate parsers. Preserve headings, paragraphs, tables, footnotes, page numbers, citations, paragraph numbering and document structure as far as technically possible.
+
+Scanned judgments and photographed legal documents may require OCR. OCR output must retain page references and should be marked as extracted text rather than assumed to be a perfect transcription. When the quality of a scan is poor, the document should be flagged for review instead of silently generating incorrect legal text.
+
+HTML, TXT and Markdown should be converted into a safe internal document representation. ZIP extraction must be secure and must prevent path traversal, malformed archives and decompression attacks.
+
+Support image files for seals, document exhibits, case photographs and other lawful document attachments, but do not assume that every image is suitable for public display.
+
+The system should recognise multiple documents inside one combined PDF or DOCX where reliable document boundaries can be detected. It should not merge separate cases merely because they appear within the same source file.
+
+---
+
+# PART 3 — INTELLIGENT LEGAL DOCUMENT IDENTIFICATION
+
+## 5. Legal document type detection
+
+Every uploaded document must first be assigned a document type.
+
+The AI must recognise the difference between a court judgment, an interim order, a final order, a tribunal decision, a petition, a written statement, a rejoinder, an affidavit, a legal notice, a contract, an agreement, a statutory provision, a Bare Act, an amendment, a government notification, a regulation, a circular, a research paper, a legal article, an opinion, a court filing, an evidence document and a client correspondence record.
+
+It must not classify a document simply by its filename. A file called `judgment.pdf` might contain an order, a case note or an unrelated document. A document containing the name of a court is not necessarily a judgment.
+
+Inspect the document's headings, opening paragraphs, case title, court identity, case number, date, parties, signature block, operative directions, statutory references and document structure.
+
+If the AI cannot establish the document type with sufficient confidence, it must assign a provisional type and place the record in a document-verification queue.
+
+The document type should be separate from the legal subject category. A judgment about property disputes is still a judgment; Property Law is its subject area. A research paper about arbitration is still a research paper; Arbitration is its subject.
+
+---
+
+# PART 4 — INDIAN LEGAL JURISDICTION AND COURT CLASSIFICATION
+
+## 6. Jurisdiction identification
+
+This system is primarily intended for Indian legal research and law firm operations. The AI must identify the applicable country, jurisdiction, state, court, tribunal, authority and territorial scope from the document.
+
+Do not assume that every uploaded document belongs to India. International judgments, foreign contracts, comparative legal studies and cross-border matters must be identified separately.
+
+Where Indian law is involved, classify the relevant level of the judicial system.
+
+The system should recognise the Supreme Court of India, High Courts, District and Sessions Courts, Civil Courts, Criminal Courts, Family Courts, Commercial Courts, tribunals, commissions, regulatory bodies and other relevant adjudicatory institutions.
+
+It should identify the actual court appearing in the document and preserve its official name. Do not confuse the filing court, appellate court and court that originally decided the matter.
+
+A document from the Punjab and Haryana High Court must not be classified as a Supreme Court judgment merely because it cites a Supreme Court decision. A district court order must not be presented as a High Court precedent.
+
+For Haryana-related legal research, the system should identify relevant state and district information where present, including the court, district and jurisdiction mentioned in the document. It must not infer a court location merely from the law firm's office address.
+
+## 7. Court hierarchy and precedential classification
+
+The system should extract the court level and identify the possible precedential importance of a judgment.
+
+However, it must not blindly declare that every higher-court citation is binding in every jurisdiction or that every judgment establishes a general legal rule.
+
+The system should preserve the issuing court, bench composition, coram where available, jurisdiction, decision date, procedural stage, later treatment if verified and the relevant legal question.
+
+It should distinguish a final judgment from an interim direction, an administrative order, a procedural order and a non-speaking disposal wherever the document allows that distinction.
+
+The system may identify potentially authoritative judgments and suggest their relevance to a research query, but final conclusions regarding binding precedent, subsequent overruling, conflicting benches, distinguishing facts or current precedential status must be verified using reliable legal sources and, where necessary, by a qualified lawyer.
+
+Never invent a case citation, bench strength, paragraph number or judicial direction.
+
+## 8. Court-specific records
+
+For every case, extract available information such as case title, case number, case type, neutral citation, reporter citation, court, bench, judge names, parties, date of decision, counsel names if published, statutes, sections, procedural history, issues, final outcome and relevant paragraphs.
+
+Preserve the exact case title and original citation as presented in the source.
+
+Create separate fields for neutral citations, standard reporter citations, case numbers and source-document identifiers. Do not combine every reference into one text field.
+
+The system should be able to link multiple documents belonging to the same matter, including original petitions, interim orders, final judgments, appeals, review petitions and subsequent decisions, only when the relationship is supported by evidence.
+
+---
+
+# PART 5 — LEGAL PRACTICE AREA CLASSIFICATION
+
+The most important classification requirement is that the AI must understand the legal subject matter of each document. It should not categorise a judgment only by the name of the statute or the court.
+
+The same statute may appear in several types of litigation. One case may involve criminal procedure, constitutional rights, evidence and administrative action simultaneously. The system must identify the principal legal issue and store secondary legal subjects separately.
+
+The following practice areas describe the classification framework. Inspect the actual practice areas configured in the PuniaAssociates website and map these categories to the existing structure. Do not replace the current website taxonomy without approval.
+
+## 9. Constitutional Law
+
+The Constitutional Law category should contain cases and research dealing with constitutional interpretation, fundamental rights, constitutional remedies, separation of powers, legislative competence, federalism, constitutional amendments, constitutional institutions and the relationship between the State and individuals.
+
+The AI must identify the constitutional question actually raised in the case, the relevant constitutional provision, the challenged state action or legal provision, the petitioner's argument, the State's position and the court's reasoning. It should recognise whether the case concerns equality, freedom of speech, life and personal liberty, religious freedom, constitutional remedies, judicial review or another constitutional subject.
+
+A judgment mentioning Article 14 does not automatically become an equality-law judgment. The AI must understand why the provision was invoked and whether the court actually decided that issue.
+
+The system should extract relevant constitutional articles, legal tests, standards of review, reasoning and operative directions. It must distinguish a constitutional challenge from a case that merely cites a constitutional provision.
+
+## 10. Civil Litigation and General Civil Disputes
+
+Civil Litigation should contain disputes involving civil rights, claims, declarations, injunctions, recovery, possession, damages, specific performance, civil procedure, limitation, jurisdiction and enforcement of civil remedies.
+
+The AI should identify the nature of the relief sought and the central civil issue. It should distinguish a suit for recovery from a title dispute, a declaration from an injunction and a procedural challenge from a decision on substantive rights.
+
+Extract the court, suit number, parties, pleadings, issues framed, relief sought, evidence considered, findings and final decree or order where available.
+
+A procedural judgment about adjournments or filing requirements should not automatically be presented as a precedent on substantive civil rights. Preserve the procedural context and decision stage.
+
+## 11. Criminal Law and Criminal Litigation
+
+Criminal Law should include criminal offences, investigations, prosecutions, bail, arrest, remand, trial, conviction, acquittal, sentencing, appeals, revisions, criminal procedure and criminal remedies.
+
+The system must identify the difference between an allegation, an FIR, a charge sheet, a framed charge, evidence, a finding of guilt, a conviction and an acquittal. It must never treat an accused person as convicted merely because an FIR or complaint exists.
+
+Extract applicable statutory provisions, offence descriptions, procedural stage, court, relevant evidence, issues, findings and final directions.
+
+For cases involving bail, identify the grounds considered, relevant procedural posture and the court's actual reasoning. Do not invent general bail rules from one case without examining its facts and legal context.
+
+The classification should recognise criminal cases under the applicable current and historical Indian statutory framework. It must not automatically convert older references into newer section numbers.
+
+## 12. Bharatiya Nyaya Sanhita and Criminal Substantive Law
+
+This category should specifically organise research on criminal offences and substantive criminal law under the applicable Indian legislation, including the Bharatiya Nyaya Sanhita where relevant.
+
+The AI must recognise the offences, definitions, exceptions, punishments and relevant statutory provisions actually discussed in the source.
+
+Where a judgment concerns an offence under a predecessor enactment such as the Indian Penal Code, preserve the original provision. Do not silently substitute a Bharatiya Nyaya Sanhita section merely because the newer legislation covers a broadly similar subject.
+
+If a comparison between old and new provisions is requested, create a separately verified comparison record with clear citations to the respective statutory texts and commencement information.
+
+## 13. Criminal Procedure and Bharatiya Nagarik Suraksha Sanhita
+
+This category should cover arrest, investigation, police powers, remand, bail, summons, warrants, trial procedure, cognizance, discharge, framing of charges, appeal, revision and other procedural issues.
+
+The system should recognise the applicable procedural enactment and preserve the exact section used in the original source.
+
+For historical cases referring to the Code of Criminal Procedure, 1973, retain those original references. Do not automatically replace them with provisions of the Bharatiya Nagarik Suraksha Sanhita.
+
+When producing a cross-reference between the former and current law, the AI must verify the statutory mapping, commencement and applicable transitional provisions. A superficially similar heading is not enough to establish equivalence.
+
+## 14. Evidence Law and Bharatiya Sakshya Adhiniyam
+
+Evidence Law should cover admissibility, relevancy, burden of proof, presumptions, documentary evidence, electronic records, witness examination, confessions, expert testimony, admissions, proof of documents, dying declarations and related questions.
+
+The AI should identify the actual evidentiary proposition discussed by the court, the evidence considered and the legal standard applied.
+
+For judgments referring to the Indian Evidence Act, preserve the historical statutory name and exact provision. For matters involving the Bharatiya Sakshya Adhiniyam, preserve its actual provisions and applicable legal context.
+
+Do not assume that every old Evidence Act provision has a direct one-to-one equivalent under the newer law. Cross-reference only after verification against authoritative statutory material.
+
+## 15. Property Law and Real Estate
+
+Property Law should cover ownership, title, possession, transfer, registration, conveyancing, partition, inheritance, tenancy, leases, mortgages, easements, land acquisition, property development and disputes involving immovable property.
+
+The AI should identify the kind of property, relief sought, title documents, chain of ownership, registration issues, possession status and applicable statutory framework.
+
+It must distinguish a title dispute from a contractual sale dispute, a tenancy matter from an ownership dispute and a land acquisition challenge from an ordinary transfer transaction.
+
+Extract survey or property identifiers only when they genuinely appear in the source. Confidential property documents must not be published publicly.
+
+## 16. Contract Law and Commercial Agreements
+
+This category should include formation, validity, interpretation, performance, breach, remedies, damages, termination, indemnity, guarantees, representations, warranties and enforceability of agreements.
+
+The AI should identify the parties, nature of agreement, obligations, disputed clauses, breach allegations, relief sought and court's interpretation.
+
+Distinguish contractual obligations from statutory duties. Do not assume that a clause is enforceable merely because it appears in a signed document. Do not generate a final legal conclusion on enforceability without considering governing law, facts and relevant judicial authority.
+
+For private contracts, the system must store the document in the confidential matter vault unless expressly approved for publication.
+
+## 17. Corporate and Company Law
+
+Corporate Law should include company formation, directors, shareholder rights, corporate governance, shareholder disputes, oppression and mismanagement, company restructuring, statutory compliance, corporate insolvency and company-related litigation.
+
+The AI should identify the relevant entity, corporate status, directors, shareholders, statutory provisions, regulatory bodies and nature of dispute.
+
+It should distinguish corporate litigation from routine business reporting. A judgment concerning director disqualification may belong under Corporate Law, while a general company investment announcement belongs under Business.
+
+Preserve the exact statutory provisions and distinguish historical Companies Act provisions from later amendments and applicable rules.
+
+## 18. Arbitration, Conciliation and Alternative Dispute Resolution
+
+This category should include arbitration agreements, jurisdiction, appointment of arbitrators, interim protection, tribunal procedure, arbitral awards, enforcement, setting aside, conciliation and mediation.
+
+The AI should identify whether a dispute concerns the existence or validity of an arbitration agreement, appointment of an arbitrator, jurisdiction of the tribunal, interim relief, challenge to an award or enforcement.
+
+The system must distinguish a court's procedural direction from a final ruling on arbitral jurisdiction or the merits of an award.
+
+For each judgment, extract the relevant arbitration provisions, procedural stage, issue and final direction. Do not treat all references to arbitration as equivalent legal principles.
+
+## 19. Family Law and Matrimonial Disputes
+
+Family Law should cover marriage, divorce, judicial separation, maintenance, custody, guardianship, domestic relationships, family property, inheritance and related family proceedings under the applicable legal framework.
+
+The AI should identify the parties' legal relationship, applicable personal or statutory framework where clearly established, the relief sought, jurisdiction and procedural stage.
+
+It must distinguish a maintenance proceeding from divorce, custody from guardianship and a domestic violence application from a general criminal complaint.
+
+Family documents often contain highly sensitive personal information. These records should remain private by default. Never publish identities, personal correspondence, financial particulars or details about minors through public content generation without explicit legal and editorial approval.
+
+## 20. Succession, Wills and Inheritance
+
+This category should cover wills, probate, letters of administration, testamentary succession, intestate succession, inheritance rights, partition of inherited property, family arrangements and estate administration.
+
+The AI should identify the relevant relationship, nature of succession, applicable statute, will status, disputed document and court's determination.
+
+Do not assume that the same succession rules apply to every person or community. Personal law, statutory provisions, territorial jurisdiction and factual circumstances matter.
+
+Preserve the exact statutory context and mark uncertain legal interpretations for qualified review.
+
+## 21. Labour and Employment Law
+
+Labour and Employment Law should include employment contracts, termination, wages, working conditions, industrial disputes, workplace rights, social security, employer responsibilities and employment-related litigation.
+
+The AI should identify whether the matter concerns an individual service contract, industrial employment, statutory employment protections, disciplinary proceedings, compensation or a regulatory issue.
+
+Extract the employment relationship, applicable legal framework, relevant dates, disputed action, remedies and court or authority.
+
+Do not assume that every employment dispute is governed by the same legislation. Preserve the distinction between current and historical labour statutes and verify applicable commencement and transitional arrangements.
+
+## 22. Service Law and Government Employment
+
+Service Law should cover recruitment, appointments, eligibility, promotions, seniority, transfers, disciplinary action, suspension, dismissal, pension, reservation, service benefits and disputes involving public employment.
+
+The AI must distinguish government service litigation from private-sector employment disputes.
+
+Extract recruitment rules, notification dates, service regulations, public authority, post, eligibility conditions, relevant administrative decision and judicial relief.
+
+A judgment about a recruitment examination may relate primarily to Service Law, Education or Administrative Law. Classify the principal issue and retain other subjects as secondary topics.
+
+Do not invent eligibility criteria or dates. Where a judgment interprets an old recruitment rule, preserve the historical version and identify any later amendment only after verification.
+
+## 23. Administrative Law
+
+Administrative Law should contain judicial review of administrative decisions, natural justice, delegated legislation, administrative discretion, public authority obligations, government orders, licensing, regulatory powers and procedural fairness.
+
+The AI must identify the challenged administrative action, competent authority, legal source of power, procedural issue and remedy sought.
+
+Distinguish a policy decision from an individual administrative order, and an administrative recommendation from a final enforceable direction.
+
+Extract the court's examination of jurisdiction, reasons, fairness, statutory authority and relevant procedural safeguards wherever the judgment discusses them.
+
+## 24. Banking and Financial Law
+
+This area should cover banking disputes, loans, guarantees, recovery proceedings, secured transactions, financial contracts, debt enforcement, borrower rights, financial regulation and disputes involving banks or lenders.
+
+The AI should identify the nature of financial relationship, lender, borrower, security, loan type, alleged default, applicable legislation and forum.
+
+Distinguish a civil recovery claim from insolvency proceedings and secured-creditor enforcement. Identify relevant statutory references carefully and preserve the legal stage.
+
+Financial account details, customer identities and loan documents must be treated as confidential unless specifically authorised for public legal research.
+
+## 25. Insolvency and Bankruptcy Law
+
+This category should include corporate insolvency resolution, liquidation, individual insolvency where applicable, creditor claims, insolvency professionals, resolution plans, moratoriums and disputes under the applicable insolvency framework.
+
+The AI should identify the relevant debtor, creditor type, insolvency stage, authority or tribunal, statutory provision and decision.
+
+Distinguish admission of an insolvency application from commencement of a resolution process and distinguish a resolution plan from a completed resolution.
+
+Preserve the relevant dates, procedural stage and actual operative directions. Do not assume that a party's claimed financial default has been legally established merely because insolvency proceedings have been initiated.
+
+## 26. Consumer Protection Law
+
+Consumer Law should cover defective goods, deficient services, unfair trade practices, product liability, consumer contracts, compensation, refunds, warranties and disputes before consumer commissions.
+
+The AI should identify the consumer relationship, service or product, alleged deficiency, remedy sought, commission level and procedural stage.
+
+Distinguish a commercial dispute from a consumer claim and preserve relevant statutory definitions and jurisdictional conditions.
+
+Where the case concerns insurance, housing, banking or healthcare, record the main subject along with Consumer Law as an additional classification where appropriate.
+
+## 27. Intellectual Property Law
+
+Intellectual Property Law should include trademarks, copyright, patents, designs, trade secrets, passing off, infringement, licensing and disputes concerning protected creative or commercial rights.
+
+The AI should identify the specific IP right, registration details if present, owner, alleged infringing act, relevant work or mark, relief and legal test considered.
+
+Do not assume that every dispute concerning a brand name involves a registered trademark. Distinguish registration, ownership, use, passing off, licensing and infringement.
+
+Preserve registration numbers and relevant dates exactly. Confidential commercial material and unpublished inventions should remain private.
+
+## 28. Taxation and Revenue Law
+
+This category should include direct taxes, indirect taxes, GST, customs, assessments, tax recovery, penalties, exemptions, refunds, tax appeals and disputes involving revenue authorities.
+
+The AI should identify the relevant tax regime, assessment period, statutory provision, authority, demand or disputed liability and stage of proceedings.
+
+It must distinguish a proposed demand, show-cause notice, assessment order, appeal, tribunal decision and final court judgment.
+
+Historical tax matters must retain the law applicable to the relevant assessment period. Do not assume that a current amendment applies retrospectively.
+
+## 29. Cyber Law and Data Protection
+
+This category should include cybercrime, unauthorised access, online fraud, digital evidence, electronic records, privacy, data protection, intermediary liability and digital platform regulation.
+
+The AI should identify the type of digital conduct, applicable technology, legal framework, relevant authority and procedural stage.
+
+Distinguish a cybercrime prosecution from a data-protection compliance matter and from a contractual dispute involving a digital platform.
+
+Protect passwords, personal identifiers, digital credentials, confidential communications and other sensitive information. Never expose such material in public article generation, legal search results or AI prompts that are not properly protected.
+
+## 30. Environmental Law
+
+Environmental Law should contain matters involving pollution, environmental permissions, regulatory compliance, forest and wildlife protection, land use, environmental impact assessment, natural resources and environmental public interest litigation.
+
+The AI should identify the environmental issue, geographic location, challenged approval or activity, responsible authority, applicable statute and relief sought.
+
+Distinguish scientific assertions in the evidence from legal findings by the court. Preserve the exact status of approvals, notices, clearances and directions.
+
+## 31. Motor Accident Claims and Insurance Law
+
+This category should include motor accident claims, compensation, liability, insurance coverage, policy interpretation, negligence, disability assessment, claims tribunals and related appeals.
+
+The AI should identify the accident date, vehicle type, claimant, insurer, tribunal or court, injuries or loss as recorded in the source, legal issue and outcome.
+
+Treat personal identity, medical particulars and financial information as confidential unless an approved public judgment can lawfully be used in a case analysis.
+
+Distinguish an award by a tribunal from an appellate modification or final settlement.
+
+## 32. Consumer Property, Tenancy and Housing Disputes
+
+Where the actual content concerns housing projects, delayed possession, builder-buyer agreements, tenant rights, rent, eviction, development authority decisions or housing regulation, the system should identify the most relevant primary legal area.
+
+It must distinguish ownership litigation from consumer deficiency, tenancy from service disputes and land acquisition from urban planning.
+
+Preserve the specific statute, contractual relationship, authority and remedy sought.
+
+Do not put every real estate case into Property Law if its actual central dispute concerns consumer rights or statutory regulation. Use a primary area with appropriate secondary classifications.
+
+## 33. Education, University and Regulatory Law
+
+This category should handle education-related litigation, admission eligibility, examination disputes, recognition, affiliation, university autonomy, disciplinary matters, regulatory approvals and institutional obligations.
+
+The AI should distinguish policy disputes, service matters, student admission litigation, institutional regulation and examination challenges.
+
+Extract the relevant educational institution, authority, course, examination, notification, academic year and applicable rule.
+
+Do not turn one judicial order into a universal admission rule without checking its facts and jurisdiction.
+
+## 34. Writ Petitions and Public Interest Litigation
+
+Writ-related documents should be recognised as a procedural and constitutional form of legal proceeding, not automatically as an independent substantive subject.
+
+The AI should identify the relevant writ jurisdiction, legal provision, public authority, nature of relief, challenged action and primary legal issue.
+
+For public interest litigation, distinguish the petitioner’s claims, public interest question, maintainability issues and the court's final directions.
+
+A writ petition concerning property may be primarily Property Law with Constitutional or Administrative Law as related categories. A writ concerning service matters may be Service Law with Writ Proceedings as a procedural label.
+
+## 35. Tribunal and Regulatory Litigation
+
+This category should cover litigation before specialised tribunals and regulatory authorities, including matters involving company law, securities, tax, consumer protection, service disputes, environmental regulation and other specialist areas.
+
+The AI must identify the forum, jurisdiction, enabling statute, type of proceeding and appeal or review route where stated.
+
+Do not assume that every tribunal order is a court judgment. Preserve its actual document type and issuing authority.
+
+---
+
+# PART SIX — BARE ACTS, LEGISLATION AND AMENDMENT INTELLIGENCE
+
+## 36. Dedicated legislation library
+
+Build a separate legislation library for Bare Acts, rules, regulations, notifications, circulars, amendments, commencement notifications, delegated legislation and other legal instruments.
+
+The system must identify the exact title of each enactment, short title, year, jurisdiction, commencement date where available, amendment history and source.
+
+It must distinguish a principal Act from an amending Act, a rule made under an Act, a notification bringing a provision into force and a departmental circular.
+
+Do not merge different versions of the same statute into one document without preserving version identity.
+
+## 37. Section-wise extraction
+
+Where a Bare Act is uploaded, extract its structure into chapters, parts, sections, subsections, clauses, provisos, explanations, schedules and definitions.
+
+Preserve exact numbering and legislative wording. Maintain links between a section and the source page or paragraph from which it was extracted.
+
+The system should be able to retrieve a complete provision and also identify related provisions in the same enactment.
+
+Do not rewrite statutory text as if it were the official provision. Any AI explanation or plain-language summary must be clearly labelled as explanatory material and kept separate from the original statutory wording.
+
+## 38. Amendment tracking
+
+When a new amendment document is uploaded, identify the principal Act affected, the provisions amended, substituted, inserted or omitted, the amendment date, commencement and transitional provisions where available.
+
+Create a version history rather than overwriting the earlier Bare Act.
+
+The system should distinguish an amendment's enactment date from its commencement date. It must not assume that every amendment takes effect on the date it receives assent or publication.
+
+Where commencement depends on a separate notification, identify that missing dependency and flag the provision for verification.
+
+## 39. Old and new criminal law mapping
+
+Support historical and current Indian criminal law materials while preserving the original statutory references.
+
+For documents involving the Indian Penal Code, Code of Criminal Procedure and Indian Evidence Act, retain their original titles, provisions and relevant case-law context.
+
+For documents involving the Bharatiya Nyaya Sanhita, Bharatiya Nagarik Suraksha Sanhita and Bharatiya Sakshya Adhiniyam, retain their actual provisions and effective legal context.
+
+Provide a separate mapping facility for related provisions where a reliable statutory cross-reference exists. Do not invent direct equivalents where the legislative changes are not equivalent.
+
+A legal researcher must be able to see whether a judgment interprets an earlier provision or a current enactment. This distinction is essential.
+
+---
+
+# PART SEVEN — CASE LAW INTELLIGENCE ENGINE
+
+## 40. Detailed judgment analysis
+
+Every judgment uploaded to the platform should be converted into a structured legal research record.
+
+Extract the case title, citation, case number, issuing court, bench, decision date, judges, parties, legal provisions, facts, procedural history, issues, arguments, legal reasoning, authorities cited, final holding and operative directions wherever available.
+
+The system must preserve the difference between facts of the case, submissions of the parties, questions framed by the court, findings, reasoning and final operative order.
+
+Do not treat a party's argument as the court's holding. Do not treat a quoted precedent as the present court's own conclusion. Do not confuse an obiter observation with an operative direction.
+
+## 41. Ratio decidendi and obiter analysis
+
+The AI may propose the probable ratio decidendi and identify passages that appear to be obiter dicta, but it must show the exact paragraph references supporting its analysis.
+
+It should explain which legal issue was necessary for the court's decision and which observations may be broader than what was required to decide the dispute.
+
+These outputs must be marked as AI-assisted legal analysis requiring verification. The platform must not present a model-generated legal interpretation as an authoritative judicial statement.
+
+Where the judgment is short, unclear, split between opinions or procedurally limited, the AI must acknowledge those limitations.
+
+## 42. Statutory section mapping
+
+Identify every material Act and section discussed in the judgment.
+
+Store the statute title, year, section, subsection, clause and whether the provision was central to the decision or merely mentioned.
+
+Link the judgment to the correct Bare Act record and section-wise library.
+
+Do not link to a similarly numbered provision from another enactment. A section number without its statute title is not a reliable identifier.
+
+## 43. Citation extraction and verification
+
+Extract every identifiable case citation from judgments, articles and research papers.
+
+Maintain the original citation string and, where possible, normalised case identity. Identify whether a citation refers to the same case using an alternative citation format.
+
+Where reliable legal sources are available, verify the citation, case title, court and date. Never fabricate a neutral citation or reporter reference.
+
+If an identified citation cannot be verified, mark it as unverified rather than presenting it as confirmed.
+
+## 44. Subsequent treatment and precedent history
+
+Where reliable sources permit, associate judgments with subsequent appeals, review petitions, overruling decisions, clarifications, larger-bench decisions or later judgments that distinguish or follow them.
+
+Do not claim that a judgment is overruled, reversed or no longer good law based merely on a similar later case.
+
+Any subsequent-treatment classification must have a source and date. If the system cannot reliably establish the status, display it as not verified or research required.
+
+---
+
+# PART EIGHT — LEGAL RESEARCH AND KNOWLEDGE RETRIEVAL
+
+## 45. AI legal research search engine
+
+Build a legal search interface for authorised users.
+
+The search engine should support ordinary search, exact phrases, case citations, case numbers, statute names, section numbers, court names, parties, judges, dates, legal issues and natural-language questions.
+
+A researcher should be able to ask questions such as:
+
+"Find judgments dealing with rejection of a bail application under the relevant criminal procedure law."
+
+"Show decisions discussing the validity of an arbitration agreement."
+
+"Find cases interpreting the applicable principles of limitation in property disputes."
+
+"Find judgments from the Punjab and Haryana High Court concerning service-law seniority disputes."
+
+"Locate cases discussing admissibility of electronic evidence under the applicable evidence law."
+
+These are search examples, not claims that relevant results necessarily exist.
+
+The system should retrieve the relevant judgments, statutory provisions and source passages. It must provide case citations, court details, paragraph references and links to the original stored source where authorised.
+
+## 46. Retrieval-grounded answers
+
+The AI must answer legal research questions from the documents and verified sources actually available to the application.
+
+Do not generate a legal conclusion merely from model memory when the application is expected to perform document-based research.
+
+Every material legal proposition should be linked to supporting authorities or statutory text where available.
+
+When sources conflict or no relevant source is present, state that the available material is insufficient.
+
+The system must distinguish a search result, a summarised judgment, an AI interpretation and an official statutory provision. These are different kinds of legal information and should be visually distinguishable.
+
+## 47. Multiple-document legal analysis
+
+Allow authorised lawyers to select multiple judgments or statutes and request a comparison.
+
+The AI should compare relevant facts, issues, statutory provisions, reasoning and outcomes, identifying similarities and differences with source references.
+
+It should not create false consistency between judgments that concern different procedural stages or legal frameworks.
+
+A comparison should preserve jurisdiction, court hierarchy, decision date and statutory version so that the legal researcher can evaluate the relevance of each authority.
+
+---
+
+# PART NINE — LEGAL ARTICLES AND PUBLIC KNOWLEDGE PUBLISHING
+
+## 48. Dedicated Legal Articles Library
+
+Create a separate public-content system for approved legal articles.
+
+Article types may include legal explainers, case-law analyses, statutory updates, legal news, practice-area guides, frequently asked legal questions, comparative law articles, legal research summaries, professional insights and educational resources.
+
+The AI should identify the article's topic, format, jurisdiction, relevant statute, legal subject, author, date, relevant source and proposed practice area.
+
+The article must be written or edited in a form appropriate for public legal information. It should not expose confidential client facts or imply that a general explanatory article is personalised legal advice.
+
+## 49. Case-law analysis articles
+
+When converting a judgment into an article, clearly identify the case, court, date, legal issue, reasoning and outcome.
+
+Preserve the distinction between the judgment itself and the AI-generated or lawyer-written commentary.
+
+The article should link to the original judgment wherever legally permissible and available. It must never invent the case's final holding, paragraph number or statutory interpretation.
+
+## 50. Legal explainers and guides
+
+When the uploaded material contains an explanation of a legal process, the AI should identify the relevant jurisdiction, applicable statute, eligibility or procedural conditions, available remedies and limitations.
+
+For example, an explainer concerning bail must distinguish different types of bail and the procedural context. A guide concerning property registration must distinguish relevant registration requirements from ownership rights. A family-law guide must clearly identify that personal circumstances and applicable laws may change the analysis.
+
+All legal guides must include an appropriate date or verification status because legislation and procedure can change.
+
+## 51. Public FAQs
+
+Extract frequently asked questions from approved materials or create proposed FAQs based on a lawyer-approved source.
+
+Each FAQ should be concise, jurisdiction-specific and grounded in verified legal material.
+
+Do not generate definitive answers where the legal question depends on specific facts that are not available.
+
+Questions involving urgent litigation, personal legal rights, statutory limitation or complex legal interpretation should be flagged for lawyer review.
+
+## 52. Practice-area pages
+
+The system should support content organisation by the existing PuniaAssociates practice areas.
+
+Each practice-area page may contain an approved introduction, services actually offered by the firm, relevant legal articles, selected public judgments, FAQs and contact information.
+
+Never invent the firm's experience, case success rate, client list, credentials, awards, professional affiliations or practice capabilities.
+
+Use only verified information already present in the approved firm profile or expressly supplied by an authorised administrator.
+
+---
+
+# PART TEN — CONFIDENTIAL CLIENT MATTER VAULT
+
+## 53. Absolute separation between public and confidential data
+
+This is a critical requirement.
+
+Do not publish client documents just because they are uploaded. A case petition, signed agreement, identity document, bank statement, legal notice, medical record, private correspondence, evidence file or draft pleading must be treated as confidential by default unless an authorised lawyer explicitly designates it for a permitted public use.
+
+Create a separate private matter-management area with role-based access and matter-specific permissions.
+
+Public website visitors must never be able to access client documents, private case metadata, internal notes, confidential AI analysis or private matter search results.
+
+## 54. Private matter classification
+
+The AI should be able to identify the client matter, document type, case number, court, parties, filing date, limitation-related date if present, hearing date if present, document status and responsible lawyer where explicitly available.
+
+It should identify the document as a petition, affidavit, vakalatnama, written statement, agreement, legal notice, evidence, order, judgment, correspondence or other file type.
+
+Do not invent missing dates or legal deadlines. Extract explicit dates and mark any derived deadline as an unverified suggestion requiring lawyer confirmation.
+
+## 55. Confidentiality and security
+
+Do not use client files for public search, public SEO, website articles or training-style data reuse.
+
+Implement strict role-based access, secure storage paths, audit logs, access control checks, retention controls and privacy-conscious AI processing.
+
+Do not send confidential documents to external model providers unless the service configuration, legal permissions, organisational policy and data-processing arrangements have been explicitly approved.
+
+Provide a private AI-assisted document-summary option only for authorised users and preserve access restrictions throughout processing.
+
+Any client confidentiality or privacy concern must result in a review hold rather than public publication.
+
+---
+
+# PART ELEVEN — LAWYER AND FIRM PROFILE MANAGEMENT
+
+## 56. Lawyer profiles
+
+The application should manage approved lawyer profiles through the existing team section.
+
+Where profile documents are uploaded, extract proposed information such as name, role, qualifications, university, enrolment details, areas of practice, experience, languages, publications and professional biography.
+
+However, never automatically publish qualifications, years of experience, bar enrolment numbers, professional memberships, awards or case history without verification.
+
+The system should distinguish the person's actual name from a document filename and distinguish an academic qualification from a professional licence or enrolment.
+
+Only information reviewed and approved by an authorised administrator should become publicly visible.
+
+## 57. Firm information
+
+Support the management of firm history, office details, approved contact information, practice-area descriptions, professional announcements and website content.
+
+Do not invent office addresses, telephone numbers, lawyer identities, operating hours or other factual details.
+
+Use the actual approved profile records already available in the application.
+
+---
+
+# PART TWELVE — LEGAL DOCUMENT TEMPLATES AND DRAFTING SUPPORT
+
+## 58. Legal drafting library
+
+Where permitted and properly reviewed, support a private library of draft formats and legal templates.
+
+Documents may include notices, applications, petitions, affidavits, agreements, written statements and other legal drafting materials.
+
+Each template must include jurisdiction, intended purpose, document type, applicable legal framework, source/version and review status.
+
+Do not assume that one template is suitable for every court or state. A document's procedural format and legal requirements may vary.
+
+## 59. AI-assisted drafting
+
+Provide an optional drafting assistant for authorised legal professionals using approved firm templates and verified source material.
+
+The system may propose a draft, extract facts from authorised matter documents and identify missing information. It must never invent facts, dates, case citations, evidence or client instructions.
+
+Every generated draft must be clearly marked as a draft and require review by a qualified lawyer before filing, sending or signing.
+
+Do not automatically file a document in court, send legal notices or communicate with an opposing party without a separate authorised human action.
+
+---
+
+# PART THIRTEEN — ADMIN PANEL AND DASHBOARD DESIGN
+
+## 60. Main administration structure
+
+Integrate the new features within the existing PuniaAssociates Admin Panel and follow its current visual language.
+
+Provide separate sections for Legal Document Import, Case Law Library, Bare Act Library, Legal Research, Legal Articles, Practice Areas, Lawyer Profiles, Confidential Matters, Media Library, Import History and System Configuration where those modules are appropriate.
+
+Do not expose the confidential matter vault through the public content-management interface.
+
+The dashboard should show actual data from the application rather than decorative sample numbers.
+
+## 61. Import analysis screen
+
+After a bulk upload, show how many files were detected and how many were identified as judgments, Bare Acts, amendments, pleadings, contracts, research papers, legal articles, images and unknown documents.
+
+Show the extracted case names, court identities, dates, citations, statutory references, legal categories, document types and confidence values where available.
+
+Show documents that need OCR, documents with poor extraction quality, duplicate files, potentially confidential records and records whose legal classification is uncertain.
+
+Allow the administrator to inspect a document before committing it to the database.
+
+## 62. Legal category review screen
+
+Provide filters for primary legal area, secondary legal subjects, court, jurisdiction, statute, year, document type, source and confidence level.
+
+Allow authorised administrators to correct misclassified documents and review the AI's explanation.
+
+A bulk category correction must show the affected records and require confirmation. Do not allow one accidental category change to move unrelated documents into a wrong practice area.
+
+## 63. Case law dashboard
+
+The case law dashboard should provide statistics based on real records: number of judgments, courts represented, years covered, legal areas, extracted citations, unverified citations, duplicate cases and documents awaiting review.
+
+Allow filtering by court, case title, case number, citation, statute, legal issue, decision year and judgment type.
+
+Open each judgment as a structured research record with the source document, extracted metadata, legal issues, statutory references and AI-assisted analysis.
+
+## 64. Legislation dashboard
+
+Show all imported Acts, rules, regulations, amendments and notifications.
+
+Allow filtering by jurisdiction, enactment year, commencement status, amendment status, topic and source.
+
+Display version history and identify whether a document is a principal enactment, amending enactment, rule, notification or circular.
+
+Never present a statutory version as current without a verified basis.
+
+## 65. Private matter dashboard
+
+Display confidential matters only to authorised users.
+
+Show matter reference, assigned lawyer, document count, document types, dates, case status and review state where the underlying data permits.
+
+Maintain private search and separate access permissions. Do not display private-client information in public-facing analytics or general administrative screens accessible to unauthorised staff.
+
+---
+
+# PART FOURTEEN — AI LEGAL CLASSIFICATION AND QUALITY CONTROL
+
+## 66. Explainable legal decisions
+
+Every AI classification must retain the reason behind it.
+
+For example, if a document is assigned to Service Law, the system should indicate the relevant employment relationship, public service rule, disputed administrative action and central issue supporting that classification.
+
+If the same document also contains constitutional grounds, the system may store Constitutional Law as a secondary legal subject.
+
+The output must distinguish an AI recommendation from a verified lawyer decision.
+
+## 67. Independent confidence scores
+
+Maintain separate confidence values for document type detection, text extraction, court identification, citation extraction, statute recognition, primary category, secondary category, source authenticity and privacy classification.
+
+Do not combine them into one overall score that conceals uncertainty.
+
+A document may have high OCR confidence but low court identification confidence. A judgment may be reliably identified but its ratio decidendi may require legal review. Each part should retain its own status.
+
+## 68. Legal accuracy review
+
+Never invent case citations, legal propositions, section numbers, statutory wording, court orders, commencement dates, case outcomes or lawyer credentials.
+
+When legal sources conflict, preserve the conflicting references and flag the issue.
+
+Distinguish historical laws from current laws. Preserve the date on which a judgment interpreted a statutory provision.
+
+AI-generated legal summaries, research explanations and ratio analysis must be labelled as assisted analysis until approved.
+
+---
+
+# PART FIFTEEN — SOURCE VERIFICATION AND LEGAL COMPLIANCE
+
+## 69. Approved source hierarchy
+
+For statutory texts and official legal notifications, prefer authoritative government sources and official publications.
+
+For judgments, prefer the relevant Supreme Court, High Court, tribunal or official judicial source where available. Use reliable legal research databases only within their applicable access and licence conditions.
+
+Maintain the original source URL, download date and document identity.
+
+A document from an unofficial compilation must not automatically be labelled an official court copy. Source authenticity should be explicitly recorded.
+
+## 70. Publication and professional conduct safeguards
+
+Before creating any public legal content, inspect the currently applicable professional conduct rules, restrictions on legal advertising, client confidentiality requirements and other relevant professional obligations.
+
+Do not create fabricated success claims, guaranteed outcomes, misleading comparative claims, unsupported expertise claims or solicitation-oriented content.
+
+Do not publish client identities, confidential facts, case strategies or confidential documents without proper authorisation.
+
+Do not automatically publish every legal article, judgment or legal update merely because it has been uploaded.
+
+Maintain a lawyer approval gate before public publication of legal commentary or content that may materially influence a reader's understanding of legal rights.
+
+## 71. Legal information disclaimer
+
+Where appropriate, distinguish general legal information from personalised legal advice.
+
+Do not create a disclaimer that falsely implies that all legal content is verified legal advice from the firm. Use clear, lawyer-approved wording consistent with the firm's professional and regulatory obligations.
+
+Do not generate an attorney-client relationship claim or guarantee of representation merely because a user visits the website or submits a contact form.
+
+---
+
+# PART SIXTEEN — TECHNICAL ARCHITECTURE AND DATABASE DESIGN
+
+## 72. Existing infrastructure integration
+
+Use the existing PuniaAssociates application and its current Firebase and cloud configuration wherever possible.
+
+Inspect whether the project uses Firestore, Firebase Authentication, Cloud Storage, Cloud Run, a Node.js server and other services.
+
+Reuse the existing resources where appropriate. Do not create a second database, website or authentication system.
+
+Any new collections or storage structures must be compatible with the existing application and must be documented before deployment.
+
+## 73. Separate data domains
+
+Keep the following logical data domains separate:
+
+Public articles and legal publications.
+
+Case law and public judicial materials.
+
+Legislation and statutory references.
+
+Lawyer profiles and firm information.
+
+Private client matters and confidential documents.
+
+Import jobs and processing reports.
+
+AI-generated research outputs and review history.
+
+Use the existing naming conventions and actual document models. These are conceptual domains, not mandatory invented collection names.
+
+Apply strict access rules according to whether the content is public, internal or confidential.
+
+## 74. Background processing architecture
+
+Large imports must be processed outside a single long-running browser request.
+
+Use a durable queue and authenticated worker architecture compatible with the existing Cloud Run project. Cloud Tasks or Cloud Run Jobs may be used if the actual project configuration supports them.
+
+The job should proceed through discovery, extraction, classification, validation, metadata enrichment, duplicate checks, confidentiality screening, database writes and final reporting.
+
+Store checkpoints and per-document processing status. Start with a conservative batch size and controlled concurrency. Support pause, resume, cancellation and retry without duplicate database writes.
+
+Never rely on an in-memory process remaining active indefinitely.
+
+## 75. Legal knowledge indexing
+
+Create an indexing strategy that can retrieve judgments by case citation, court, statutory provision, legal subject, date, party, issue and source.
+
+If semantic search or vector embeddings are added, preserve access permissions at every retrieval stage. Confidential client documents must never leak into public search results through embeddings, cached queries or related-document recommendations.
+
+Store source references and exact paragraph or page locations so researchers can return to the underlying document.
+
+---
+
+# PART SEVENTEEN — SECURITY AND CONFIDENTIALITY
+
+## 76. Role-based access
+
+The application should support appropriate roles such as super administrator, managing lawyer, authorised lawyer, research staff, content editor and other roles that are actually required by the firm.
+
+Do not assume every employee should have access to every client matter.
+
+Verify authentication and permissions on the server, not only in frontend navigation.
+
+A hidden menu item is not an adequate security mechanism.
+
+## 77. Secure file handling
+
+Validate file types, actual MIME signatures, size limits and archive structures. Prevent ZIP path traversal and malicious file extraction.
+
+Sanitise imported HTML, block unsafe scripts and validate links. Never execute document macros or arbitrary uploaded commands.
+
+Store sensitive documents in protected cloud storage paths and enforce appropriate access rules.
+
+Do not include client names, confidential case material or sensitive document contents in unsecured system logs.
+
+## 78. AI provider and data privacy controls
+
+Before sending a private matter document to an AI provider, inspect the available model configuration, data-processing terms, retention controls and security requirements.
+
+Use only approved processing settings for confidential material.
+
+Never place private documents in public or general-purpose model prompts without appropriate authorisation. Do not use confidential client material to generate publicly accessible summaries or examples.
+
+---
+
+# PART EIGHTEEN — FINAL ACCEPTANCE TESTING
+
+## 79. End-to-end document testing
+
+Create a safe sample package with a few different judgments, Bare Acts, amendments, legal research papers, articles, a legal notice, a contract and a confidential sample matter document.
+
+Verify that every file type is identified correctly and that the confidential sample is segregated from public content.
+
+Test a historical judgment using an older statutory provision and a newer document using the applicable current enactment. Verify that the system preserves the correct statutory version.
+
+Test citation extraction, court identification, section recognition, legal classification, document relationships, duplicate detection, page references and public/private permissions.
+
+Test poor-quality OCR, malformed files, ambiguous category assignments, missing citations and uncertain document types.
+
+Then test larger batches of 25 and 100 documents. Do not claim that the platform has processed 1,000 judgments unless this has actually been tested.
+
+## 80. Final acceptance conditions
+
+The system will only be considered complete when I can upload a large collection of mixed legal documents through the existing Admin Panel, let the application identify their document types and jurisdictions, organise judgments by court and legal subject, extract citations and sections, organise Bare Acts and amendment history, create structured legal knowledge records, separate confidential client files, and make approved public legal articles available through the existing website.
+
+The system must provide reliable search, source traceability, confidence reporting, review controls and protected storage.
+
+The system must not confuse AI-generated interpretation with official law or judicial findings.
+
+---
+
+# PART NINETEEN — IMPLEMENTATION SEQUENCE
+
+## 81. Build in coherent stages
+
+First inspect the existing project and its real data structures. Next, implement the secure bulk document-upload interface and document inventory. Then develop parsers for the actual supported file formats.
+
+After extraction, implement document-type identification and Indian jurisdiction recognition. Then add legal subject classification, court identification, section extraction and citation recognition.
+
+Next implement the case law library, legislation library, article publishing integration, lawyer profile extraction and confidential matter segregation.
+
+Then implement background processing, secure storage, Firestore integration, search indexing, AI-assisted research and the Admin Panel dashboards.
+
+Finally, test the complete system with representative legal material and deploy through the existing project configuration where the required resources and permissions are available.
+
+Do not stop after creating a UI. Every component must connect to its actual backend functionality.
+
+If a stage requires additional permissions, clearly identify the specific missing permission and implement the parts that are already possible without it.
+
+## 82. Final implementation report
+
+At completion, provide a detailed report that explains the actual existing application architecture, the modifications made, files added, collections or storage structures introduced, legal document types supported, legal categories implemented, court classification rules, citation extraction behaviour, statute version handling, confidential data safeguards, AI model configuration, search implementation, background processing configuration, test results, deployment state and remaining manual requirements.
+
+Clearly distinguish features that are fully implemented and tested from features that are partially implemented or awaiting external configuration.
+
+Provide exact instructions for my first real bulk import.
+
+---
+
+# FINAL PRODUCT OBJECTIVE
+
+I want PuniaAssociates to have an intelligent legal knowledge infrastructure that can accept large collections of legal documents and organise them automatically into the correct legal practice areas, case-law records, legislation records, research resources, public legal articles and confidential matter files.
+
+The AI must understand legal context, not merely filenames and keywords.
+
+The system must recognise courts, jurisdictions, case numbers, case citations, statutory provisions, amendments, legal questions, legal reasoning, document types, practice areas and confidentiality requirements.
+
+It must preserve the exact legal source, distinguish historical and current law, prevent fabricated citations, keep confidential client documents private, and require proper lawyer review before public legal content is published.
+
+I should be able to supply a large collection of documents and let the application do the complex classification, extraction, organisation, indexing and draft preparation.
+
+Build an actual working legal knowledge and document management system inside my existing PuniaAssociates application.
+
+Do not create a superficial demonstration. Inspect, implement, connect, test and document the real system.
